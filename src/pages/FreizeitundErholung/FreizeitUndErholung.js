@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../../components/Banner/Banner";
 import { Link } from "react-router-dom";
 import "./freizeitunderholung.styles.scss";
+import FreizeitUndErholung from "../../components/FreizeitUndErholungContainer/FreizeitUndErholungContainer";
 function FreizeitAndErholung() {
   return (
     <>
@@ -15,7 +16,7 @@ function FreizeitAndErholung() {
           </Link>
         </Banner>
       </header>
-      {/* <RoomContainer /> */}
+      <FreizeitUndErholung />
     </>
   );
 }
