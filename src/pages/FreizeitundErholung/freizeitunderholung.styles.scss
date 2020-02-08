@@ -1,0 +1,17 @@
+.roomsHero {
+  background: url("../../assets/images/freizeit.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  margin-top: 7rem;
+}
+.returnHome {
+  background-color: #e91e63 !important;
+  padding: 1rem;
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: none;
+    background-color: #f80053 !important;
+  }
+}

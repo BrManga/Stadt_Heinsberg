@@ -1,0 +1,39 @@
+.container-fluid {
+  position: relative;
+  top: 7rem;
+  background-color: gray;
+  height: calc(100vh - 7rem);
+  .rowTop {
+    height: 70%;
+  }
+  .backgroundImg {
+    background-image: url("https://www.lebenshilfe-heinsberg.de/assets/2017/11/heinsberg_01-845x684.jpg");
+    background-position: bottom;
+    background-size: cover;
+  }
+  .facilities {
+    height: 30%;
+    font-size: 2rem;
+    font-weight: 800;
+    a {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .freizeit {
+      background-color: #41436a;
+    }
+    .essen {
+      background-color: #fe9677;
+    }
+    .nacht {
+      background-color: #f64668;
+    }
+    .sport {
+      background-color: #984063;
+    }
+  }
+}
