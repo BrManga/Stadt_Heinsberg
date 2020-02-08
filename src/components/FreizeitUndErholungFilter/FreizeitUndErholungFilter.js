@@ -9,6 +9,7 @@ const getUnique = (items, value, type) => {
 export default function FreizeitUndErholungFilter({ freizeitunderholung }) {
   //const context = useContext(freizeitunderholungContext);
 const [type, setType] = useState("")
+console.log("type:", type)
   let types = getUnique(freizeitunderholung, "restaurant", "type");
   types = ["all", ...types];
   types = types.map((item, index) => {

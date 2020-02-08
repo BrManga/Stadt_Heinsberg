@@ -8,7 +8,7 @@ function FreizeitAndErholung() {
     <>
       <header className="roomsHero">
         <Banner
-          title="Freizeit&Erholung"
+          title="Restaurants"
           subtitle="Niemand kann nein sagen zu einem guten Essen"
         >
           <Link to="/" className="btn-primary returnHome">
