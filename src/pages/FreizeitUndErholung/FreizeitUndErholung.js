@@ -1,22 +1,22 @@
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import { Link } from "react-router-dom";
-import "./essenundtrinken.styles.scss";
-import EssenUndTrinkenContainer from "../../components/EssenUndTrinkenContainer/EssenUndTrinkenContainer";
+import "./freizeitunderholung.styles.scss";
+import FreizeitUndErholungContainer from "../../components/FreizeitUndErholungContainer/FreizeitUndErholungContainer";
 function EssenUndTrinken() {
   return (
     <>
-      <header className="roomsHero1">
+      <header className="roomsHero">
         <Banner
-          title="Essen&Trinken"
-          subtitle="Niemand kann nein sagen zu einem guten Essen"
+          title="Freizeit&Erholung"
+          subtitle="Nichts bringt uns auf unserem Weg besser voran als eine Pause."
         >
           <Link to="/" className="btn-primary returnHome">
             Return Home
           </Link>
         </Banner>
       </header>
-      <EssenUndTrinkenContainer />
+      <FreizeitUndErholungContainer />
     </>
   );
 }

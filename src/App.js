@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import HomePageContainer from "./components/HomePageContainer/HomePageContainer";
 import { Switch, Route } from "react-router-dom";
 import EssenUndTrinken from "./pages/EssenUndTrinken/EssenUndTrinken";
-
+import FreizeitUndErholung from "./pages/FreizeitUndErholung/FreizeitUndErholung"
 function App() {
   return (
     <>
@@ -15,7 +15,7 @@ function App() {
           <HomePageContainer />
         </Route>
         <Route exact path="/freizeitunderholung">
-        {/*   <FreizeitAndErholung /> */}
+         <FreizeitUndErholung/>
         </Route>
         <Route exact path="/essenundtrinken">
           <EssenUndTrinken />

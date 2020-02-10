@@ -10,7 +10,9 @@ class HeinsbergContextProvider extends React.Component {
       loading: false,
       sorted: [],
       essenundtrinken: [],
-      type: "all"
+      type: "alle",
+      preise: "-",
+      freizeitunderholung: []
     };
   }
 
@@ -20,44 +22,55 @@ class HeinsbergContextProvider extends React.Component {
 
   getData = async datafromEffect => {
     try {
-      const { loading, sorted, essenundtrinken } = datafromEffect;
-      console.log("bilgi geliyor",datafromEffect);
+      const {
+        loading,
+        sorted,
+        essenundtrinken,
+        freizeitunderholung
+      } = datafromEffect;
+      //console.log("bilgi geliyor", datafromEffect);
 
       //console.log("sorted restaurant bilgisi alindi",sortedRestaurants);
 
-      await this.setState({ loading, sorted, essenundtrinken });
+      await this.setState({
+        loading,
+        sorted,
+        essenundtrinken,
+        freizeitunderholung
+      });
     } catch (error) {
       console.log("get data fonksiyonunda hata", error);
     }
   };
   filterRestaurants = () => {
-    console.log("yazmamali", this.state);
-    const { type, essenundtrinken } = this.state;
+    // console.log("yazmamali", this.state);
+    const { type, essenundtrinken, preise } = this.state;
 
     let tempRestaurants = essenundtrinken.restaurant;
-    if (type !== "all") {
-      console.log(tempRestaurants);
-      console.log("type", type);
+    if (type !== "alle") {
+      //console.log(tempRestaurants);
+      //console.log("type", type);
 
       tempRestaurants = tempRestaurants.filter(
         restaurant => restaurant.type === type
       );
     }
-    var restaurant={restaurant:tempRestaurants}
-    console.log("here2");
+    if (preise !== "-") {
+      tempRestaurants = tempRestaurants.filter(
+        restaurant => restaurant.preise === preise
+      );
+    }
 
-    this.setState({ sorted:restaurant }, () => console.log(this.state));
+    var restaurant = { restaurant: tempRestaurants };
+
+    this.setState({ sorted: restaurant }, () => console.log(this.state));
   };
   handleChange = async e => {
     const target = e.target;
     const value = target.type === "checkbox" ? target.checked : target.value;
     const name = e.target.name;
-    console.log(name, value);
 
-    await this.setState({ ...this.state, [name]: value }, () =>
-      console.log("yeter amk", this.state)
-    );
-    console.log("here1");
+    await this.setState({ ...this.state, [name]: value });
     this.filterRestaurants();
   };
   render() {

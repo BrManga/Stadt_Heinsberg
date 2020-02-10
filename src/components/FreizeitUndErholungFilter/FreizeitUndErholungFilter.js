@@ -1,19 +1,20 @@
 import React, { useContext } from "react";
 import Title from "../Title/Title";
 import { HeinsbergContext } from "../../context";
-import "./essenundtrinkenfilter.styles.scss";
+import "./freizeitunderholung.styles.scss";
 
-const getUnique = (items, value, type) => {
+const getUnique = (items, type) => {
   //console.log("items geldi",items);
-  return [...new Set(items[value].map(item => item[type]))];
+  return [...new Set(items.map(item => item[type]))];
 };
-//essenundtrinken key altindakiler buraya geliyor
-export default function EssenUndTrinkenFilter({ data }) {
+
+export default function FreizeitUndErholungFilter({ data }) {
   //console.log("Filter", data);
   const context = useContext(HeinsbergContext);
-  const { essenundtrinken, handleChange, type, preise } = context;
-  //console.log("context", essenundtrinken);
-  let types = getUnique(essenundtrinken, "restaurant", "type");
+  const { freizeitunderholung, handleChange, type, preise } = context;
+  //console.log("geldi", freizeitunderholung);
+  let types = getUnique(freizeitunderholung.sehenswertesundsport, "type");
+  //console.log("geldi",types);
   types = ["alle", ...types];
   types = types.map((item, index) => {
     return (
@@ -22,7 +23,7 @@ export default function EssenUndTrinkenFilter({ data }) {
       </option>
     );
   });
-  let preises = getUnique(essenundtrinken, "restaurant", "preise");
+  /* let preises = getUnique(freizeitunderholung, "restaurant", "preise");
   preises = ["-", ...preises];
   preises = preises.sort(function(a, b) {
     // ASC  -> a.length - b.length
@@ -36,7 +37,7 @@ export default function EssenUndTrinkenFilter({ data }) {
         {item}
       </option>
     );
-  });
+  }); */
   /* 
   let people = getUnique(rooms, "capacity");
   people = people.map((item, index) => {
@@ -52,7 +53,7 @@ export default function EssenUndTrinkenFilter({ data }) {
       <form className="filter-form">
         {}
         <div className="form-group">
-          <label htmlFor="type">Restaurant type</label>
+          <label htmlFor="type">Erleben</label>
           <select
             name="type"
             id="type"
@@ -63,7 +64,7 @@ export default function EssenUndTrinkenFilter({ data }) {
             {types}
           </select>
         </div>
-        <div className="form-group">
+       {/*  <div className="form-group">
           <label htmlFor="price">Preise</label>
           <select
             name="preise"
@@ -74,7 +75,7 @@ export default function EssenUndTrinkenFilter({ data }) {
           >
             {preises}
           </select>
-        </div>
+        </div> */}
         {/*  <div className="form-group">
           <label htmlFor="capacity">Guests</label>
           <select
