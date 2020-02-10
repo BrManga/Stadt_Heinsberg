@@ -1,9 +1,9 @@
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import { Link } from "react-router-dom";
-import "./freizeitunderholung.styles.scss";
-import FreizeitUndErholung from "../../components/FreizeitUndErholungContainer/FreizeitUndErholungContainer";
-function FreizeitAndErholung() {
+import "./essenundtrinken.styles.scss";
+import EssenUndTrinkenContainer from "../../components/EssenUndTrinkenContainer/EssenUndTrinkenContainer";
+function EssenUndTrinken() {
   return (
     <>
       <header className="roomsHero">
@@ -16,9 +16,9 @@ function FreizeitAndErholung() {
           </Link>
         </Banner>
       </header>
-      <FreizeitUndErholung />
+      <EssenUndTrinkenContainer />
     </>
   );
 }
 
-export default FreizeitAndErholung;
+export default EssenUndTrinken;

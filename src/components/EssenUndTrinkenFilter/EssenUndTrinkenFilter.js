@@ -1,16 +1,19 @@
-import React, { useContext, useState } from "react";
-//import { freizeitunderholungContext } from "../context";
+import React, { useContext } from "react";
 import Title from "../Title/Title";
+import { HeinsbergContext } from "../../context";
+import "./essenundtrinkenfilter.styles.scss";
 
 const getUnique = (items, value, type) => {
-  console.log(items);
+  //console.log("items geldi",items);
   return [...new Set(items[value].map(item => item[type]))];
 };
-export default function FreizeitUndErholungFilter({ freizeitunderholung }) {
-  //const context = useContext(freizeitunderholungContext);
-const [type, setType] = useState("")
-console.log("type:", type)
-  let types = getUnique(freizeitunderholung, "restaurant", "type");
+//essenundtrinken key altindakiler buraya geliyor
+export default function EssenUndTrinkenFilter({ data }) {
+  console.log("Filter", data);
+  const context = useContext(HeinsbergContext);
+  const { essenundtrinken, handleChange, type } = context;
+  console.log("context", essenundtrinken);
+  let types = getUnique(essenundtrinken, "restaurant", "type");
   types = ["all", ...types];
   types = types.map((item, index) => {
     return (
@@ -19,6 +22,18 @@ console.log("type:", type)
       </option>
     );
   });
+  let preise = getUnique(essenundtrinken, "restaurant", "preise");
+  preise = ["preise", ...preise];
+  preise=preise.map((item, index) => {
+    console.log("preise", item);
+
+    return (
+      <option value={item} key={index}>
+        {item}
+      </option>
+    );
+  });
+  console.log(preise)
   /* 
   let people = getUnique(rooms, "capacity");
   people = people.map((item, index) => {
@@ -34,18 +49,30 @@ console.log("type:", type)
       <form className="filter-form">
         {}
         <div className="form-group">
-          <label htmlFor="type">Erlohung type</label>
+          <label htmlFor="type">Restaurant type</label>
           <select
             name="type"
             id="type"
             value={type}
             className="form-control"
-            onChange={(e)=>setType(e.target.value)}
+            onChange={handleChange}
           >
             {types}
           </select>
         </div>
-       {/*  <div className="form-group">
+        <div className="form-group">
+          <label htmlFor="price">Preise</label>
+          <select
+            name="price"
+            id="price"
+            value={"preise"}
+            className="form-control"
+            onChange={handleChange}
+          >
+            {preise}
+          </select>
+        </div>
+        {/*  <div className="form-group">
           <label htmlFor="capacity">Guests</label>
           <select
             name="capacity"
@@ -57,19 +84,7 @@ console.log("type:", type)
             {people}
           </select>
         </div>
-        <div className="form-group">
-          <label htmlFor="price">room price ${price}</label>
-          <input
-            type="range"
-            name="price"
-            min={minPrice}
-            max={maxPrice}
-            value={price}
-            id="price"
-            onChange={handleChange}
-            className="form-control"
-          />
-        </div>
+       
         <div className="form-group">
           <label htmlFor="size">room size</label>
           <div className="size-inputs">

@@ -4,7 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import HomePageContainer from "./components/HomePageContainer/HomePageContainer";
 import { Switch, Route } from "react-router-dom";
-import FreizeitAndErholung from "./pages/FreizeitundErholung/FreizeitUndErholung";
+import EssenUndTrinken from "./pages/EssenUndTrinken/EssenUndTrinken";
 
 function App() {
   return (
@@ -15,7 +15,10 @@ function App() {
           <HomePageContainer />
         </Route>
         <Route exact path="/freizeitunderholung">
-          <FreizeitAndErholung />
+        {/*   <FreizeitAndErholung /> */}
+        </Route>
+        <Route exact path="/essenundtrinken">
+          <EssenUndTrinken />
         </Route>
       </Switch>
     </>

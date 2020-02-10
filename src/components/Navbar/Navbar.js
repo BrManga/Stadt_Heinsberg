@@ -22,7 +22,7 @@ function Navbar() {
         <MDBNavbar className="navbar" dark expand="md" scrolling fixed="top">
           <MDBNavbarBrand href="/" className="logoImageContainer">
             <div className="swing">
-              <img src={logo} class="mx-auto logoImage" alt="Heinsberg" />
+              <img src={logo} className="mx-auto logoImage" alt="Heinsberg" />
             </div>
           </MDBNavbarBrand>
           <MDBNavbarToggler onClick={onClick} />
