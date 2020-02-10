@@ -49,7 +49,7 @@ export default function FreizeitUndErholungFilter({ data }) {
   }); */
   return (
     <section className="filter-container">
-      <Title title="Search Restaurants" />
+      <Title title="Freizeit, Erholung" />
       <form className="filter-form">
         {}
         <div className="form-group">
@@ -64,7 +64,7 @@ export default function FreizeitUndErholungFilter({ data }) {
             {types}
           </select>
         </div>
-       {/*  <div className="form-group">
+        {/*  <div className="form-group">
           <label htmlFor="price">Preise</label>
           <select
             name="preise"
