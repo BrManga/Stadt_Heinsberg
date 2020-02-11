@@ -1,7 +1,20 @@
 exports.data = {
   loading: false,
   sorted: {
-    restaurant: []
+    restaurant: [],
+    freizeitunderholung: [
+      {
+        id: 9,
+        name: "BEGAS HAUS - Museum",
+        popularität: "****",
+        googlebewertungen: 4.2,
+        type: "sehenswertes",
+        slug: "begashaus",
+
+        image:
+          "https://www.heinsberg.de/website/var/tmp/thumb_102__auto_1740e1f92ebab1592a49f096678aae02.jpeg"
+      }
+    ]
   },
   essenundtrinken: {
     restaurant: [
@@ -124,8 +137,7 @@ exports.data = {
         type: "sport",
         slug: "ultraleichtfliegen",
 
-        image:
-          "https://www.google.com/maps/uv?hl=en&pb=!1s0x47c0afd134b15555:0xae19e49b6fcbd44c!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipN7hgUmbJ_NTtjaB_Rxyf5tIGJ0c4HtOmFF42iH%3Dw213-h160-k-no!5sUltraleichtfliegen+heinsberg+-+Google+Search&imagekey=!1e10!2sAF1QipN7hgUmbJ_NTtjaB_Rxyf5tIGJ0c4HtOmFF42iH&sa=X&ved=2ahUKEwjP29r028fnAhXIyaQKHZ3dBkwQoiowCnoECAwQBg#"
+        image: "https://heinslive.blog/wp-content/uploads/klein_IMG_0238.jpg"
       },
       {
         id: 12,
@@ -136,7 +148,7 @@ exports.data = {
         slug: "ballonfahren",
 
         image:
-          "https://www.google.com/maps/uv?hl=en&pb=!1s0x47c0b0d756aeacd9%3A0x536870daa5c0ce52!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPQfqENTSmr9-kxaJzzsIHVCek5jyRV0oPDpI-1%3Dw213-h160-k-no!5sballonfahren%20heinsberg%20-%20Google%20Search!15sCAQ&imagekey=!1e10!2sAF1QipPQfqENTSmr9-kxaJzzsIHVCek5jyRV0oPDpI-1&sa=X&ved=2ahUKEwi46YSX3MfnAhXH2aQKHZzOCnMQoiowCnoECA4QBg#"
+          "https://www.skytravel24.de/images/produkte/google-ballonfahrt-400-400.png"
       }
     ]
   }

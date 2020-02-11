@@ -1,5 +1,6 @@
 import React from "react";
 import loadingGif from "../../assets/images/loading.gif";
+import "./loading.styles.scss";
 export default function Loading() {
   return (
     <div className="loading">

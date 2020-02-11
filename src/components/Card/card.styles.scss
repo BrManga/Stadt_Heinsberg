@@ -44,13 +44,17 @@
   background: rgba(0, 0, 0, 0.8);
 }
 .img-container:hover img {
-  opacity: 0.3;
+  opacity: 0.6;
 }
 .img-container:hover .preise {
   opacity: 0;
 }
 .img-container:hover .card-link {
   transform: translate(-50%, -50%) scale(1);
+  background-color: #ea4863;
+  font-size: 1.3rem;
+  opacity: 0.8;
+  color: white;
 }
 .card-info {
   background: #ea4863;

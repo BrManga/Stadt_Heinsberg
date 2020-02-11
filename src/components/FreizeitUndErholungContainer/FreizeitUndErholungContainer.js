@@ -17,7 +17,7 @@ function FreizeitundErholungContainer() {
   return (
     <div>
       <FreizeitundErholungFilter data={freizeitunderholung} />
- {/*      <FreizeitundErholungList essenundtrinken={sorted} /> */}
+      <FreizeitundErholungList freizeitunderholung={sorted.freizeitunderholung} />
     </div>
   );
 }

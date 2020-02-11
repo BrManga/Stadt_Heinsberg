@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-
+import alldata from "./data";
 export const HeinsbergContext = createContext();
 
 class HeinsbergContextProvider extends React.Component {
@@ -7,7 +7,7 @@ class HeinsbergContextProvider extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      loading: false,
+      loading: true,
       sorted: [],
       essenundtrinken: [],
       type: "alle",
@@ -17,7 +17,7 @@ class HeinsbergContextProvider extends React.Component {
   }
 
   componentDidMount = () => {
-    this.getData(this.props.data.data);
+    this.getData(alldata.data);
   };
 
   getData = async datafromEffect => {
@@ -28,15 +28,15 @@ class HeinsbergContextProvider extends React.Component {
         essenundtrinken,
         freizeitunderholung
       } = datafromEffect;
-      //console.log("bilgi geliyor", datafromEffect);
+      console.log("bilgi geliyor", datafromEffect);
 
       //console.log("sorted restaurant bilgisi alindi",sortedRestaurants);
 
       await this.setState({
-        loading,
         sorted,
         essenundtrinken,
-        freizeitunderholung
+        freizeitunderholung,
+        loading: false
       });
     } catch (error) {
       console.log("get data fonksiyonunda hata", error);
@@ -62,9 +62,31 @@ class HeinsbergContextProvider extends React.Component {
     }
 
     var restaurant = { restaurant: tempRestaurants };
-
-    this.setState({ sorted: restaurant }, () => console.log(this.state));
+    var sortedAll = { ...this.state.sorted, restaurant };
+    this.setState({ sorted: sortedAll }, () => console.log(this.state));
   };
+  filterFreizeitUndErholung = () => {
+    // console.log("yazmamali", this.state);
+    const { type, freizeitunderholung } = this.state;
+    console.log("fonksiyon icinden", freizeitunderholung, type);
+
+    let { sehenswertesundsport } = freizeitunderholung;
+    if (type !== "alle") {
+      sehenswertesundsport = sehenswertesundsport.filter(
+        item => item.type === type
+      );
+    }
+    console.log("fonksiyon icindena", sehenswertesundsport);
+
+    var sortedAll = {
+      ...this.state.sorted,
+      freizeitunderholung: sehenswertesundsport
+    };
+    this.setState({ sorted: sortedAll }, () =>
+      console.log("state", this.state)
+    );
+  };
+
   handleChange = async e => {
     const target = e.target;
     const value = target.type === "checkbox" ? target.checked : target.value;
@@ -72,8 +94,11 @@ class HeinsbergContextProvider extends React.Component {
 
     await this.setState({ ...this.state, [name]: value });
     this.filterRestaurants();
+    this.filterFreizeitUndErholung();
   };
   render() {
+
+
     return (
       <HeinsbergContext.Provider
         value={{ ...this.state, handleChange: this.handleChange }}

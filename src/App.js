@@ -5,7 +5,8 @@ import Navbar from "./components/Navbar/Navbar";
 import HomePageContainer from "./components/HomePageContainer/HomePageContainer";
 import { Switch, Route } from "react-router-dom";
 import EssenUndTrinken from "./pages/EssenUndTrinken/EssenUndTrinken";
-import FreizeitUndErholung from "./pages/FreizeitUndErholung/FreizeitUndErholung"
+import FreizeitUndErholung from "./pages/FreizeitUndErholung/FreizeitUndErholung";
+import Details from "./pages/Details/Details";
 function App() {
   return (
     <>
@@ -15,9 +16,16 @@ function App() {
           <HomePageContainer />
         </Route>
         <Route exact path="/freizeitunderholung">
-         <FreizeitUndErholung/>
+          <FreizeitUndErholung />
         </Route>
+        <Route
+          exact
+          path="/freizeitunderholung/:slug"
+          component={Details}
+        ></Route>
         <Route exact path="/essenundtrinken">
+          <Route exact path="/essenundtrinken/:slug" component={Details} />
+
           <EssenUndTrinken />
         </Route>
       </Switch>
