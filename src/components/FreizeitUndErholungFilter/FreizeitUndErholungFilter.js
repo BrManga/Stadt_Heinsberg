@@ -8,13 +8,13 @@ const getUnique = (items, type) => {
   return [...new Set(items.map(item => item[type]))];
 };
 
-export default function FreizeitUndErholungFilter({ data }) {
-  //console.log("Filter", data);
+export default function FreizeitUndErholungFilter() {
+
   const context = useContext(HeinsbergContext);
-  const { freizeitunderholung, handleChange, type, preise } = context;
+  const { freizeitunderholung, handleChange, type} = context;
   //console.log("geldi", freizeitunderholung);
   let types = getUnique(freizeitunderholung.sehenswertesundsport, "type");
-  //console.log("geldi",types);
+  console.log("geldi",types);
   types = ["alle", ...types];
   types = types.map((item, index) => {
     return (

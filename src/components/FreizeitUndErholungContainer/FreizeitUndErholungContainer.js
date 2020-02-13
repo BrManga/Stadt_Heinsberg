@@ -8,7 +8,7 @@ function FreizeitundErholungContainer() {
   const context = useContext(HeinsbergContext);
   //console.log("data yazdirildi", context);
 
-  const { loading, sorted, freizeitunderholung, handleChange } = context;
+  const { loading, sorted } = context;
   //console.log("yazdi", freizeitunderholung);
 
   if (loading) {
@@ -16,8 +16,8 @@ function FreizeitundErholungContainer() {
   }
   return (
     <div>
-      <FreizeitundErholungFilter data={freizeitunderholung} />
-      <FreizeitundErholungList freizeitunderholung={sorted.freizeitunderholung} />
+      <FreizeitundErholungFilter />
+      <FreizeitundErholungList sorted={sorted.freizeitunderholung} />
     </div>
   );
 }

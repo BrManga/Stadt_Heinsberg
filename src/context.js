@@ -28,7 +28,7 @@ class HeinsbergContextProvider extends React.Component {
         essenundtrinken,
         freizeitunderholung
       } = datafromEffect;
-      console.log("bilgi geliyor", datafromEffect);
+      //console.log("bilgi geliyor", datafromEffect);
 
       //console.log("sorted restaurant bilgisi alindi",sortedRestaurants);
 
@@ -42,8 +42,8 @@ class HeinsbergContextProvider extends React.Component {
       console.log("get data fonksiyonunda hata", error);
     }
   };
-  filterRestaurants = () => {
-    // console.log("yazmamali", this.state);
+  filterEssenUndTrinken = () => {
+    console.log("yazmamali", this.state);
     const { type, essenundtrinken, preise } = this.state;
 
     let tempRestaurants = essenundtrinken.restaurant;
@@ -61,14 +61,14 @@ class HeinsbergContextProvider extends React.Component {
       );
     }
 
-    var restaurant = { restaurant: tempRestaurants };
-    var sortedAll = { ...this.state.sorted, restaurant };
-    this.setState({ sorted: sortedAll }, () => console.log(this.state));
+    var sortedAll = { ...this.state.sorted, essenundtrinken: tempRestaurants };
+    console.log("sortedAll", sortedAll);
+    this.setState({ sorted: sortedAll } /* , () => console.log(this.state) */);
   };
   filterFreizeitUndErholung = () => {
     // console.log("yazmamali", this.state);
     const { type, freizeitunderholung } = this.state;
-    console.log("fonksiyon icinden", freizeitunderholung, type);
+    //console.log("fonksiyon icinden", freizeitunderholung, type);
 
     let { sehenswertesundsport } = freizeitunderholung;
     if (type !== "alle") {
@@ -76,14 +76,15 @@ class HeinsbergContextProvider extends React.Component {
         item => item.type === type
       );
     }
-    console.log("fonksiyon icindena", sehenswertesundsport);
+    //console.log("fonksiyon icindena", sehenswertesundsport);
 
     var sortedAll = {
       ...this.state.sorted,
       freizeitunderholung: sehenswertesundsport
     };
-    this.setState({ sorted: sortedAll }, () =>
-      console.log("state", this.state)
+    this.setState(
+      { sorted: sortedAll } /* , () =>
+      console.log("state", this.state) */
     );
   };
 
@@ -93,12 +94,10 @@ class HeinsbergContextProvider extends React.Component {
     const name = e.target.name;
 
     await this.setState({ ...this.state, [name]: value });
-    this.filterRestaurants();
+    this.filterEssenUndTrinken();
     this.filterFreizeitUndErholung();
   };
   render() {
-
-
     return (
       <HeinsbergContext.Provider
         value={{ ...this.state, handleChange: this.handleChange }}

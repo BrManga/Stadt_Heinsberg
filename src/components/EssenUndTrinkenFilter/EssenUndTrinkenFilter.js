@@ -15,6 +15,8 @@ export default function EssenUndTrinkenFilter({ data }) {
   //console.log("context", essenundtrinken);
   let types = getUnique(essenundtrinken, "restaurant", "type");
   types = ["alle", ...types];
+  console.log(types);
+
   types = types.map((item, index) => {
     return (
       <option value={item} key={index}>

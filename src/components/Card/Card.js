@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./card.styles.scss";
-function Card({ value,way}) {
+function Card({ value, section }) {
   const { name, preise, googlebewertungen, image, slug } = value;
 
-  
   return (
     <article className="card">
       <div className="img-container">
@@ -13,7 +12,7 @@ function Card({ value,way}) {
           <h6>{preise}</h6>
           <p>Google: {googlebewertungen} </p>
         </div>
-        <Link to={`${way}/${slug}`} className="btn card-link" >
+        <Link to={`${section}/${slug}`} className="btn card-link">
           Features
         </Link>
       </div>

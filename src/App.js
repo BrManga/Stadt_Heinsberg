@@ -24,10 +24,10 @@ function App() {
           component={Details}
         ></Route>
         <Route exact path="/essenundtrinken">
-          <Route exact path="/essenundtrinken/:slug" component={Details} />
-
+          {" "}
           <EssenUndTrinken />
         </Route>
+        <Route exact path="/essenundtrinken/:slug" component={Details} />
       </Switch>
     </>
   );
