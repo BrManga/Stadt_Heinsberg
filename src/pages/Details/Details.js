@@ -1,10 +1,67 @@
-import React, { Component, useContext } from "react";
-
+import React, {
+  Component,
+  useContext,
+  useState,
+  useEffect,
+  useRef
+} from "react";
+import here from "../../assets/images/icon.png"
+import token from "../../key";
 import "./details.styles.scss";
-import styled from "styled-components";
 import { HeinsbergContext } from "../../context";
 import ImageCarousel from "../../components/Carousel/carousel";
+import mapboxgl from "mapbox-gl";
 const Details = props => {
+  const initialState = {
+    lng: 6.09708,
+    lat: 51.06542,
+    zoom: 12
+  };
+  const mapContainer = useRef(null);
+  useEffect(() => {
+    mapboxgl.accessToken = token.key.mapToken;
+    const map = new mapboxgl.Map({
+      container: mapContainer.current,
+      style: "mapbox://styles/mapbox/streets-v11",
+      center: [mapstate.lng, mapstate.lat],
+      zoom: mapstate.zoom
+    });
+    map.on("load", function() {
+      map.loadImage(
+        here,
+        function(error, image) {
+          if (error) throw error;
+          map.addImage("cat", image);
+          map.addSource("point", {
+            type: "geojson",
+            data: {
+              type: "FeatureCollection",
+              features: [
+                {
+                  type: "Feature",
+                  geometry: {
+                    type: "Point",
+                    coordinates: [mapstate.lng, mapstate.lat]
+                  }
+                }
+              ]
+            }
+          });
+          map.addLayer({
+            id: "points",
+            type: "symbol",
+            source: "point",
+            layout: {
+              "icon-image": "cat",
+              "icon-size": 0.25
+            }
+          });
+        }
+      );
+    });
+  }, []);
+
+  const [mapstate, setMapstate] = useState(initialState);
   const context = useContext(HeinsbergContext);
   // console.log("data yazdirildi", context);
 
@@ -83,9 +140,10 @@ const Details = props => {
                   ) : null}
                 </div>
               </div>
-              {/*              <div className="cardDown">
-                <ImageCarousel name={name} otherimages={otherimages} />
-              </div> */}
+              <div
+                ref={el => (mapContainer.current = el)}
+                className="mapContainer"
+              />
             </div>
           </div>
         </div>
