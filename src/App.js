@@ -7,6 +7,7 @@ import { Switch, Route } from "react-router-dom";
 import EssenUndTrinken from "./pages/EssenUndTrinken/EssenUndTrinken";
 import FreizeitUndErholung from "./pages/FreizeitUndErholung/FreizeitUndErholung";
 import Details from "./pages/Details/Details";
+import Historie from "./pages/Historie/Historie";
 function App() {
   return (
     <>
@@ -28,6 +29,7 @@ function App() {
           <EssenUndTrinken />
         </Route>
         <Route exact path="/essenundtrinken/:slug" component={Details} />
+        <Route exact path="/historie" component={Historie} />
       </Switch>
     </>
   );
