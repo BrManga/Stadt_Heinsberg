@@ -1,11 +1,5 @@
-import React, {
-  Component,
-  useContext,
-  useState,
-  useEffect,
-  useRef
-} from "react";
-import here from "../../assets/images/icon.png"
+import React, { useContext, useState, useEffect, useRef } from "react";
+import here from "../../assets/images/icon.png";
 import token from "../../key";
 import "./details.styles.scss";
 import { HeinsbergContext } from "../../context";
@@ -27,37 +21,34 @@ const Details = props => {
       zoom: mapstate.zoom
     });
     map.on("load", function() {
-      map.loadImage(
-        here,
-        function(error, image) {
-          if (error) throw error;
-          map.addImage("cat", image);
-          map.addSource("point", {
-            type: "geojson",
-            data: {
-              type: "FeatureCollection",
-              features: [
-                {
-                  type: "Feature",
-                  geometry: {
-                    type: "Point",
-                    coordinates: [mapstate.lng, mapstate.lat]
-                  }
+      map.loadImage(here, function(error, image) {
+        if (error) throw error;
+        map.addImage("cat", image);
+        map.addSource("point", {
+          type: "geojson",
+          data: {
+            type: "FeatureCollection",
+            features: [
+              {
+                type: "Feature",
+                geometry: {
+                  type: "Point",
+                  coordinates: [mapstate.lng, mapstate.lat]
                 }
-              ]
-            }
-          });
-          map.addLayer({
-            id: "points",
-            type: "symbol",
-            source: "point",
-            layout: {
-              "icon-image": "cat",
-              "icon-size": 0.25
-            }
-          });
-        }
-      );
+              }
+            ]
+          }
+        });
+        map.addLayer({
+          id: "points",
+          type: "symbol",
+          source: "point",
+          layout: {
+            "icon-image": "cat",
+            "icon-size": 0.25
+          }
+        });
+      });
     });
   }, []);
 
