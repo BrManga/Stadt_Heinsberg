@@ -2,10 +2,9 @@
   position: relative;
   top: 7rem;
   background-color: gray;
-  height: calc(100vh - 7rem);
+  height: 100%;
 }
 .rowTop {
-  height: 70%;
 }
 .title {
   margin-bottom: 50px;
@@ -29,6 +28,34 @@
   border-radius: 0.28571429rem;
   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
   margin-top: 20px;
+  height: 100%;
+  padding: 15px;
+}
+.cardUp {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  text-align: center;
+  address,
+  p {
+    margin: 0;
+  }
+
+  .cardUpTitle {
+    background-color: #ea4863;
+  }
+}
+.carousel {
+  margin: 40px auto 0;
+  width: 500px !important;
+  .thumbs-wrapper {
+    display: flex!important;
+    justify-content: center!important;
+}}
+.cardDown {
+  min-height: 100px;
 }
 
 .carousel-indicators li {

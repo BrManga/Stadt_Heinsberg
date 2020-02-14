@@ -38,6 +38,50 @@ exports.data = {
           "https://media-cdn.tripadvisor.com/media/photo-s/0e/8c/cf/d5/restaurant-medaillon.jpg"
         ]
       }
+    ],
+    uebernachten: [
+      {
+        id: 18,
+        name: "BEGAS HAUS - Museum",
+        popularität: "****",
+        googlebewertungen: 4.2,
+        type: "sehenswertes",
+        slug: "begashaus",
+        details:
+          "Das Begas Haus ist das Museum für Kunst und Regionalgeschichte in Heinsberg. Es erhielt seinen Namen nach der über vier Generationen wirkenden Künstlerfamilie Begas, deren Stammvater Carl Joseph Begas 1794 in Heinsberg geboren wurde.An das Museum angegliedert ist außerdem ein von der Lebenshilfe geführtes Café, in dem gelegentlich unter dem Motto „Kultur ohne Barrieren“ auch Kunst ausgestellt wird. In direkter Nähe befinden sich außerdem die Heinsberger Propsteikirche St. Gangolf sowie die Burg Heinsberg.",
+        website: "https://begas-haus.de/",
+        anschrift: "Hochstraße 21 52525 Heinsberg",
+        phone: "02452 977690",
+        image:
+          "https://www.heinsberg.de/website/var/tmp/thumb_102__auto_1740e1f92ebab1592a49f096678aae02.jpeg",
+        otherimages: [
+          "https://niederrhein-tourismus.de/wp-content/uploads/2018/10/begas_haus_2018_001-1024x684.jpg",
+          "https://www.heinsberg.de/website/var/tmp/thumb_1755__auto_a0e301e00452ca6abc7bbc1c98e803af.jpeg",
+          "https://rp-online.de/imgs/32/2/2/7/6/2/9/5/5/tok_5f8a2a936ff736ddbe1b4da252272f27/w940_h528_x470_y264_6daf61be8908a9d2.jpg"
+        ]
+      }
+    ],
+    veranstaltungen: [
+      {
+        id: 17,
+        name: "BEGAS HAUS - Museum",
+        popularität: "****",
+        googlebewertungen: 4.2,
+        type: "sehenswertes",
+        slug: "begashaus",
+        details:
+          "Das Begas Haus ist das Museum für Kunst und Regionalgeschichte in Heinsberg. Es erhielt seinen Namen nach der über vier Generationen wirkenden Künstlerfamilie Begas, deren Stammvater Carl Joseph Begas 1794 in Heinsberg geboren wurde.An das Museum angegliedert ist außerdem ein von der Lebenshilfe geführtes Café, in dem gelegentlich unter dem Motto „Kultur ohne Barrieren“ auch Kunst ausgestellt wird. In direkter Nähe befinden sich außerdem die Heinsberger Propsteikirche St. Gangolf sowie die Burg Heinsberg.",
+        website: "https://begas-haus.de/",
+        anschrift: "Hochstraße 21 52525 Heinsberg",
+        phone: "02452 977690",
+        image:
+          "https://www.heinsberg.de/website/var/tmp/thumb_102__auto_1740e1f92ebab1592a49f096678aae02.jpeg",
+        otherimages: [
+          "https://niederrhein-tourismus.de/wp-content/uploads/2018/10/begas_haus_2018_001-1024x684.jpg",
+          "https://www.heinsberg.de/website/var/tmp/thumb_1755__auto_a0e301e00452ca6abc7bbc1c98e803af.jpeg",
+          "https://rp-online.de/imgs/32/2/2/7/6/2/9/5/5/tok_5f8a2a936ff736ddbe1b4da252272f27/w940_h528_x470_y264_6daf61be8908a9d2.jpg"
+        ]
+      }
     ]
   },
   essenundtrinken: {
@@ -233,7 +277,7 @@ exports.data = {
         type: "sehenswertes",
         slug: "derselfkantdom",
         website: "",
-        anschrift: "",
+        anschrift: "Kirchberg 8, 52525 Heinsberg",
         phone: "",
         details:
           "St. Gangolf ist eine römisch-katholische Propsteikirche und ehemalige Stiftskirche in der rheinischen Stadt Heinsberg. Sie steht als Baudenkmal unter Denkmalschutz. Pfarrpatron ist der heilige Gangolf, ein burgundischer Ritter und Märtyrer des 8. Jahrhunderts. Die Kirche steht erhöht über der Stadt auf dem sogenannten Kirchberg, dem als Vorburg der Burg Heinsberg dienenden Teil der Heinsberger Motte. Die Pfarrgemeinde von St. Gangolf gehört zum Bistum Aachen.",
@@ -288,7 +332,7 @@ exports.data = {
         id: 13,
         name: "Bodyflying",
         popularität: "***",
-        googlebewertungen: "3.8",
+        googlebewertungen: 3.8,
         type: "sport",
         slug: "bodyflying",
         website: "http://www.air-power-arena.de/",
@@ -335,7 +379,7 @@ exports.data = {
           "Eine historische Windmühle, die Lümbacher Windmühle 'Clarissa' aus dem 18./19. Jahrhundert befindet sich in Heinsberg-Kirchhoven, Zur Kornmühle 7.  Die Mühle ist in einem funktionsbereitem Zustand und kann nach Absprache besichtigt werden.",
         website: "http://www.muehlenverein-selfkant.de/",
         anschrift: "Zur Kornmühle 7, 52525 Heinsberg",
-        phone: "-",
+        phone: "",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/d/da/Heinsberg-Kirchhoven_Denkmal-Nr._40%2C_Zur_Kornm%C3%BChle_%284178%29.jpg",
         otherimages: [
@@ -355,12 +399,60 @@ exports.data = {
           "Sehens- und erlebenswert: auch der Heinsberger Marktplatz mit zahlreichen Gastronomieangeboten und der angrenzenden Hochstraße mit attraktiven Geschäften.",
         website: "http://www.heinsberg.de/",
         anschrift: "Markt52525 Heinsberg",
-        phone: "-",
+        phone: "",
         image: "http://www.heinsberg.de/bilder_veranstaltungen/p1010806.jpg",
         otherimages: [
           "https://www.niederrhein.de/images/Stadt/Heinsberg/Niederrhein_de_Heinsberg.jpg",
           "http://gv-heinsberg.de/wp-content/uploads/cache/images/2020/02/web-DSC_00122/1117143056.jpg",
           "http://gv-heinsberg.de/wp-content/uploads/2014/10/web-Abendeinkauf2.jpg"
+        ]
+      }
+    ]
+  },
+  uebernachten: {
+    uebernachten: [
+      {
+        id: 18,
+        name: "BEGAS HAUS - Museum",
+        popularität: "****",
+        googlebewertungen: 4.2,
+        type: "sehenswertes",
+        slug: "begashaus",
+        details:
+          "Das Begas Haus ist das Museum für Kunst und Regionalgeschichte in Heinsberg. Es erhielt seinen Namen nach der über vier Generationen wirkenden Künstlerfamilie Begas, deren Stammvater Carl Joseph Begas 1794 in Heinsberg geboren wurde.An das Museum angegliedert ist außerdem ein von der Lebenshilfe geführtes Café, in dem gelegentlich unter dem Motto „Kultur ohne Barrieren“ auch Kunst ausgestellt wird. In direkter Nähe befinden sich außerdem die Heinsberger Propsteikirche St. Gangolf sowie die Burg Heinsberg.",
+        website: "https://begas-haus.de/",
+        anschrift: "Hochstraße 21 52525 Heinsberg",
+        phone: "02452 977690",
+        image:
+          "https://www.heinsberg.de/website/var/tmp/thumb_102__auto_1740e1f92ebab1592a49f096678aae02.jpeg",
+        otherimages: [
+          "https://niederrhein-tourismus.de/wp-content/uploads/2018/10/begas_haus_2018_001-1024x684.jpg",
+          "https://www.heinsberg.de/website/var/tmp/thumb_1755__auto_a0e301e00452ca6abc7bbc1c98e803af.jpeg",
+          "https://rp-online.de/imgs/32/2/2/7/6/2/9/5/5/tok_5f8a2a936ff736ddbe1b4da252272f27/w940_h528_x470_y264_6daf61be8908a9d2.jpg"
+        ]
+      }
+    ]
+  },
+  veranstaltungen: {
+    veranstaltungen: [
+      {
+        id: 17,
+        name: "BEGAS HAUS - Museum",
+        popularität: "****",
+        googlebewertungen: 4.2,
+        type: "sehenswertes",
+        slug: "begashaus",
+        details:
+          "Das Begas Haus ist das Museum für Kunst und Regionalgeschichte in Heinsberg. Es erhielt seinen Namen nach der über vier Generationen wirkenden Künstlerfamilie Begas, deren Stammvater Carl Joseph Begas 1794 in Heinsberg geboren wurde.An das Museum angegliedert ist außerdem ein von der Lebenshilfe geführtes Café, in dem gelegentlich unter dem Motto „Kultur ohne Barrieren“ auch Kunst ausgestellt wird. In direkter Nähe befinden sich außerdem die Heinsberger Propsteikirche St. Gangolf sowie die Burg Heinsberg.",
+        website: "https://begas-haus.de/",
+        anschrift: "Hochstraße 21 52525 Heinsberg",
+        phone: "02452 977690",
+        image:
+          "https://www.heinsberg.de/website/var/tmp/thumb_102__auto_1740e1f92ebab1592a49f096678aae02.jpeg",
+        otherimages: [
+          "https://niederrhein-tourismus.de/wp-content/uploads/2018/10/begas_haus_2018_001-1024x684.jpg",
+          "https://www.heinsberg.de/website/var/tmp/thumb_1755__auto_a0e301e00452ca6abc7bbc1c98e803af.jpeg",
+          "https://rp-online.de/imgs/32/2/2/7/6/2/9/5/5/tok_5f8a2a936ff736ddbe1b4da252272f27/w940_h528_x470_y264_6daf61be8908a9d2.jpg"
         ]
       }
     ]

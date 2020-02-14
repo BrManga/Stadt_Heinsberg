@@ -15,11 +15,11 @@ function HomePageContainer() {
         <Link to="/essenundtrinken" className="col-12 col-lg-3 essen">
           <p> Essen&Trinken</p>
         </Link>
-        <Link className="col-12 col-lg-3 nacht">
+        <Link to="/uebernachten" className="col-12 col-lg-3 nacht">
           <p> Übernachten</p>
         </Link>
-        <Link className="col-12 col-lg-3 sport">
-          <p> Sport</p>
+        <Link to="/veranstaltungen" className="col-12 col-lg-3 sport">
+          <p> Veranstaltungen</p>
         </Link>
       </div>
     </div>

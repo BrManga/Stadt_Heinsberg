@@ -14,7 +14,7 @@ export default function FreizeitUndErholungFilter() {
   const { freizeitunderholung, handleChange, type} = context;
   //console.log("geldi", freizeitunderholung);
   let types = getUnique(freizeitunderholung.sehenswertesundsport, "type");
-  console.log("geldi",types);
+  //console.log("geldi",types);
   types = ["alle", ...types];
   types = types.map((item, index) => {
     return (

@@ -2,9 +2,7 @@ import React from "react";
 import Card from "../Card/Card";
 import "./freizetunderholung.styles.scss";
 export default function FreizeitUndErholungList(props) {
-  console.log(" array geldi", props);
-  const way = Object.keys(props.sorted);
-  console.log("way", way);
+  //console.log(" array geldi", props);
 
   if (props.sorted.length === 0) {
     return (

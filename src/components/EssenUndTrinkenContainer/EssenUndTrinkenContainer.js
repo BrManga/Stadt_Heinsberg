@@ -6,9 +6,9 @@ import { HeinsbergContext } from "../../context";
 
 function EssenUndTrinkenContainer() {
   const context = useContext(HeinsbergContext);
-  console.log("data yazdirildi", context);
+  //console.log("data yazdirildi", context);
 
-  const { loading, sorted, essenundtrinken } = context;
+  const { loading, sorted} = context;
   if (loading) {
     return <Loading />;
   }

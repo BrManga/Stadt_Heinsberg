@@ -22,12 +22,7 @@ class HeinsbergContextProvider extends React.Component {
 
   getData = async datafromEffect => {
     try {
-      const {
-        loading,
-        sorted,
-        essenundtrinken,
-        freizeitunderholung
-      } = datafromEffect;
+      const { sorted, essenundtrinken, freizeitunderholung } = datafromEffect;
       //console.log("bilgi geliyor", datafromEffect);
 
       //console.log("sorted restaurant bilgisi alindi",sortedRestaurants);
@@ -43,7 +38,7 @@ class HeinsbergContextProvider extends React.Component {
     }
   };
   filterEssenUndTrinken = () => {
-    console.log("yazmamali", this.state);
+    //console.log("yazmamali", this.state);
     const { type, essenundtrinken, preise } = this.state;
 
     let tempRestaurants = essenundtrinken.restaurant;
@@ -62,7 +57,7 @@ class HeinsbergContextProvider extends React.Component {
     }
 
     var sortedAll = { ...this.state.sorted, essenundtrinken: tempRestaurants };
-    console.log("sortedAll", sortedAll);
+    //console.log("sortedAll", sortedAll);
     this.setState({ sorted: sortedAll } /* , () => console.log(this.state) */);
   };
   filterFreizeitUndErholung = () => {

@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../Card/Card";
 import "./essenundtrinkenlist.styles.scss";
 export default function EssenUndTrinkenList(props) {
-  console.log("restaurant array geldi", props);
+  //console.log("restaurant array geldi", props);
   if (props.essenundtrinken.length === 0) {
     return (
       <div className="empty-search">
