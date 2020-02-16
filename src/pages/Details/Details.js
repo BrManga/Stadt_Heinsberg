@@ -81,7 +81,7 @@ const Details = props => {
 
   return (
     <>
-      <div className="container">
+      <div className="container detailscontainer">
         <div className="row rowTop">
           <div className="col-12 col-lg-8">
             <div className="card">
@@ -132,17 +132,18 @@ const Details = props => {
                   ) : null}
                 </div>
               </div>
-              <div
-                ref={el => (mapContainer.current = el)}
-                className="mapContainer"
-              />
+              <div id="map-container">
+                <div
+                  ref={el => (mapContainer.current = el)}
+                  id="map"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-        <Footer />
-      
+      <Footer />
     </>
   );
 };

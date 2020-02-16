@@ -4,7 +4,7 @@ import "./homePageContainer.styles.scss";
 
 function HomePageContainer() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid homepage">
       <div className="row rowTop">
         <div className="col-12 backgroundImg"></div>
       </div>

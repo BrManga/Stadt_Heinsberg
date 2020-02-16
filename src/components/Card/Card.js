@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./card.styles.scss";
-function Card({ value, section }) {
-  const { name, preise, googlebewertungen, image, slug } = value;
-//console.log(slug);
 
+function Card({ value, section }) {
+  var { name, preise, googlebewertungen, image, slug } = value;
   return (
     <article className="card">
       <div className="img-container">

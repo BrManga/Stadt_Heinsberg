@@ -1,10 +1,8 @@
-.container {
-  position: relative;
-  top: 7rem;
+.detailscontainer {
+  margin-top: 7rem;
   height: 100%;
 }
-.rowTop {
-}
+
 .title {
   margin-bottom: 50px;
   text-transform: uppercase;
@@ -21,8 +19,6 @@
 }
 .card {
   font-size: 1em;
-  overflow: hidden;
-  padding: 5;
   border: none;
   border-radius: 0.28571429rem;
   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
@@ -43,10 +39,10 @@
     color: black;
     margin: 0;
   }
-  a{
+  a {
     text-decoration: none;
     color: rgb(51, 6, 6);
-    &:hover{
+    &:hover {
       color: rgb(199, 11, 11);
     }
   }
@@ -56,13 +52,13 @@
   }
 }
 .carousel {
-  margin: 40px auto 0;
+  margin: 0 auto;
   width: 500px !important;
   .thumbs-wrapper {
-    display: flex!important;
-    justify-content: center!important;
-}}
-
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
 
 .carousel-indicators li {
   border-radius: 12px;
@@ -97,7 +93,14 @@
   width: 100%;
 }
 /* MAP */
-.mapContainer {
+#map-container {
+  position: relative;
+  height: 180px;
   width: 100%;
-  height: 50%;
-  }
+}
+
+#map {
+  position: relative;
+  height: inherit;
+  width: inherit;
+}

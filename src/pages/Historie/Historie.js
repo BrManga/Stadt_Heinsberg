@@ -1,5 +1,6 @@
 import React from "react";
 import "./historie.styles.scss";
+import Footer from "../../components/Footer/Footer";
 const Historie = () => {
   return (<>
     <div className="container historiek">
@@ -89,7 +90,9 @@ const Historie = () => {
           </p>
         </div>
       </div>
-    </div></>
+    </div>
+    <Footer/>
+    </>
   );
 };
 

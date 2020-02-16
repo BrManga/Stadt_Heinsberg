@@ -1,7 +1,11 @@
 //Restaurant tipleri arttirilarak ona göre filtreleme degisecek
 //google bewertungen alinabilir mi
+import medal1 from "./assets/images/essenundtrinken/Restaurant Medaillon/1.jpg";
+import medal2 from "./assets/images/essenundtrinken/Restaurant Medaillon/2.jpg";
+import medal3 from "./assets/images/essenundtrinken/Restaurant Medaillon/3.jpg";
+import medal4 from "./assets/images/essenundtrinken/Restaurant Medaillon/4.jpg";
 
-exports.data = {
+export const data = {
   loading: false,
   sorted: {
     freizeitunderholung: [],
@@ -22,13 +26,8 @@ exports.data = {
         "“Dobro dosli” Vor mehr als 30 Jahren hat der Inhaber Zdravko Lasic seinen Heimatort als Meisterkoch verlassen und ist in die Welt raus.1996 erfüllte sich der Traum vom eigenen Restaurantund zwar natürlich in Heinsberg. Nun sind wir seit 20 Jahren ein Familienbetrieb im Herzen von Heinsberg mit einem gut eingespielten Team und vielen Stammgästen von Nah und Fern.Sie können uns über den Markt in Heinsberg erreichen, unser Restaurant ist auf dem Markt und befindet sich direkt über einen Parkplatz",
       anschrift: "Markt 16, 52525 Heinsberg",
       phone: "02452 3207",
-      image:
-        "https://www.golocal.de/ublmedia/unsafe/fit-in/1500x1500/smart/https://www.golocal.de/media/33b764c57e3566ec7d2bab42d65661f3/ori_d0754ffbea74c6d5.jpg",
-      otherimages: [
-        "https://lh3.googleusercontent.com/proxy/cXEvalQ25lj6KtUGi7D7ZMz9f9xJYnMV5rxmMTceycQFVPO1mRV66qeq7VLNa5yI5IAqC8gZh9iHAkk0HOwOsyeywSrB3kFaJN1tbB2SwmwzDNUNFZNSUnb-Z7Ugz8ro",
-        "https://lh3.googleusercontent.com/proxy/Hmx2NOkaA3kb4GOLf0lHgwepZPGL5t6oFcrCzztHogYXyAh1-E3yRxUadkz_fiVY5yEARt6TukG37LB-ojz6j07O0KmEt3Ugl1cugbA_LMxbjG1zo3Fkdoy1-GM7ixcO",
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/8c/cf/d5/restaurant-medaillon.jpg"
-      ]
+      image: medal1,
+      otherimages: [medal2, medal3, medal4]
     },
     {
       id: 2,
