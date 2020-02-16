@@ -13,7 +13,7 @@ function EssenUndTrinken() {
           subtitle="Niemand kann nein sagen zu einem guten Essen"
         >
           <Link to="/" className="btn-primary returnHome">
-            Return Home
+          Zurück zur Startseite 
           </Link>
         </Banner>
       </header>

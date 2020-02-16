@@ -25,7 +25,7 @@ export default function FreizeitUndErholungFilter() {
 
   return (
     <section className="filter-container">
-      <Title title="Freizeit, Erholung" />
+
       <form className="filter-form">
         {}
         <div className="form-group">

@@ -13,7 +13,7 @@ export default function EssenUndTrinkenFilter() {
   console.log("context", essenundtrinken);
   let types = getUnique(essenundtrinken, "type");
   types = ["alle", ...types];
- // console.log(types);
+  // console.log(types);
 
   types = types.map((item, index) => {
     return (
@@ -37,22 +37,13 @@ export default function EssenUndTrinkenFilter() {
       </option>
     );
   });
-  /* 
-  let people = getUnique(rooms, "capacity");
-  people = people.map((item, index) => {
-    return (
-      <option value={item} key={index}>
-        {item}
-      </option>
-    );
-  }); */
+
   return (
     <section className="filter-container">
-      <Title title="Search Restaurants" />
       <form className="filter-form">
         {}
         <div className="form-group">
-          <label htmlFor="type">Restaurant type</label>
+          <label htmlFor="type">Restauranttyp</label>
           <select
             name="type"
             id="type"

@@ -1,25 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./stadtplan.styles.scss";
 import mapboxgl from "mapbox-gl";
 import token from "../../key";
 const Stadtplan = () => {
-  const initialState = {
-    lng: 6.09708,
-    lat: 51.06542,
-    zoom: 13
-  };
+
   const mapContainer = useRef(null);
   useEffect(() => {
     mapboxgl.accessToken = token.key.mapToken;
-    const map = new mapboxgl.Map({
+    new mapboxgl.Map({
       container: mapContainer.current,
       style: "mapbox://styles/mapbox/streets-v11",
-      center: [mapstate.lng, mapstate.lat],
-      zoom: mapstate.zoom
+      center: [6.09708, 51.06542],
+      zoom: 13
     });
   }, []);
-  const [mapstate, setMapstate] = useState(initialState);
-
   return (
     <div className="container">
       <div className="row d-flex align-items-center ">

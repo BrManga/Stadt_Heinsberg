@@ -13,12 +13,12 @@ function FreizeitUndErholung() {
           subtitle="Nichts bringt uns auf unserem Weg besser voran als eine Pause."
         >
           <Link to="/" className="btn-primary returnHome">
-            Return Home
+            Zurück zur Startseite
           </Link>
         </Banner>
       </header>
       <FreizeitUndErholungContainer />
-      <Footer/>
+      <Footer />
     </>
   );
 }

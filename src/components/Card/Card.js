@@ -14,7 +14,7 @@ function Card({ value, section }) {
           <p>Google: {googlebewertungen} </p>
         </div>
         <Link to={`${section}/${slug}`} className="btn card-link">
-          Features
+          Entdecken
         </Link>
       </div>
       <p className="card-info">{name}</p>
