@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "../Card/Card";
 import "./freizetunderholung.styles.scss";
-export default function FreizeitUndErholungList(props) {
-  //console.log(" array geldi", props);
+export default function FreizeitUndErholungList({ sorted }) {
+  console.log(" freizeit list component props:", sorted);
 
-  if (props.sorted.length === 0) {
+  if (sorted.freizeitunderholung.length === 0) {
     return (
       <div className="empty-search">
         <h3>Keine Treffer</h3>
@@ -15,13 +15,9 @@ export default function FreizeitUndErholungList(props) {
   return (
     <section className="restaurantslist">
       <div className="restaurantslist-center">
-        {props.sorted.map(item => {
+        {sorted.freizeitunderholung.map(item => {
           return (
-            <Card
-              key={item.id}
-              value={item}
-              section={"freizeitunderholung"}
-            />
+            <Card key={item.id} value={item} section={"freizeitunderholung"} />
           );
         })}
       </div>

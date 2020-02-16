@@ -3,6 +3,7 @@ import Banner from "../../components/Banner/Banner";
 import { Link } from "react-router-dom";
 import "./essenundtrinken.styles.scss";
 import EssenUndTrinkenContainer from "../../components/EssenUndTrinkenContainer/EssenUndTrinkenContainer";
+import Footer from "../../components/Footer/Footer";
 function EssenUndTrinken() {
   return (
     <>
@@ -17,6 +18,7 @@ function EssenUndTrinken() {
         </Banner>
       </header>
       <EssenUndTrinkenContainer />
+      <Footer />
     </>
   );
 }

@@ -6,7 +6,7 @@ import { HeinsbergContext } from "../../context";
 
 function EssenUndTrinkenContainer() {
   const context = useContext(HeinsbergContext);
-  //console.log("data yazdirildi", context);
+  console.log("data yazdirildi", context);
 
   const { loading, sorted} = context;
   if (loading) {
@@ -15,7 +15,7 @@ function EssenUndTrinkenContainer() {
   return (
     <div>
       <EssenUndTrinkenFilter />
-      <EssenUndTrinkenList essenundtrinken={sorted.essenundtrinken} />
+      <EssenUndTrinkenList sorted={sorted} />
     </div>
   );
 }

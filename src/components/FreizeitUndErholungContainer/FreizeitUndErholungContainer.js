@@ -9,7 +9,7 @@ function FreizeitundErholungContainer() {
   //console.log("data yazdirildi", context);
 
   const { loading, sorted } = context;
-  //console.log("yazdi", freizeitunderholung);
+  //console.log("yazdi", sorted);
 
   if (loading) {
     return <Loading />;
@@ -17,7 +17,7 @@ function FreizeitundErholungContainer() {
   return (
     <div>
       <FreizeitundErholungFilter />
-      <FreizeitundErholungList sorted={sorted.freizeitunderholung} />
+      <FreizeitundErholungList sorted={sorted} />
     </div>
   );
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "../Card/Card";
 import "./essenundtrinkenlist.styles.scss";
-export default function EssenUndTrinkenList(props) {
+export default function EssenUndTrinkenList({sorted}) {
   //console.log("restaurant array geldi", props);
-  if (props.essenundtrinken.length === 0) {
+  if (sorted.essenundtrinken.length === 0) {
     return (
       <div className="empty-search">
         <h3>Keine Treffer</h3>
@@ -14,7 +14,7 @@ export default function EssenUndTrinkenList(props) {
   return (
     <section className="restaurantslist">
       <div className="restaurantslist-center">
-        {props.essenundtrinken.map(item => {
+        {sorted.essenundtrinken.map(item => {
           return (
             <Card
               key={item.id}

@@ -8,7 +8,7 @@ body,
   font-family: "Ubuntu Condensed", sans-serif;
   background-color: white;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 :root {
   --primaryColor: #af9a7d;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./card.styles.scss";
 function Card({ value, section }) {
   const { name, preise, googlebewertungen, image, slug } = value;
-console.log(slug);
+//console.log(slug);
 
   return (
     <article className="card">

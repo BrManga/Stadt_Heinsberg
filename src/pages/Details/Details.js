@@ -5,6 +5,7 @@ import "./details.styles.scss";
 import { HeinsbergContext } from "../../context";
 import ImageCarousel from "../../components/Carousel/carousel";
 import mapboxgl from "mapbox-gl";
+import Footer from "../../components/Footer/Footer";
 const Details = props => {
   const initialState = {
     lng: 6.09708,
@@ -139,6 +140,9 @@ const Details = props => {
           </div>
         </div>
       </div>
+
+        <Footer />
+      
     </>
   );
 };

@@ -24,15 +24,12 @@ const Stadtplan = () => {
     <div className="container">
       <div className="row d-flex align-items-center ">
         <div class="heading-frame col-12 col-lg-5">
-          <p className="warning">
-            Klick nicht auf mich, ich bin nur Lego, klick auf die Karte!!
-          </p>
           <h2 contenteditable="true ">MY CITY HEINSBERG</h2>
         </div>
         <div className="col-12 col-lg-6 ml-5">
           <h1>HEINSBERGER STADTPLAN</h1>
           <h5 className="mt-5">
-            Klicken Sie das Bild an, um eine große Ansicht des Heinsberger
+            Klicken Sie auf die Karte an, um eine große Ansicht des Heinsberger
             Stadtplans zu erhalten.
           </h5>
         </div>

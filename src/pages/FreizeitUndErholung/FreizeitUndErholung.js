@@ -3,7 +3,8 @@ import Banner from "../../components/Banner/Banner";
 import { Link } from "react-router-dom";
 import "./freizeitunderholung.styles.scss";
 import FreizeitUndErholungContainer from "../../components/FreizeitUndErholungContainer/FreizeitUndErholungContainer";
-function EssenUndTrinken() {
+import Footer from "../../components/Footer/Footer";
+function FreizeitUndErholung() {
   return (
     <>
       <header className="roomsHero">
@@ -17,8 +18,9 @@ function EssenUndTrinken() {
         </Banner>
       </header>
       <FreizeitUndErholungContainer />
+      <Footer/>
     </>
   );
 }
 
-export default EssenUndTrinken;
+export default FreizeitUndErholung;
