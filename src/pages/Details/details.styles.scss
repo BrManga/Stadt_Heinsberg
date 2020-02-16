@@ -52,7 +52,7 @@
   }
 }
 .carousel {
-  margin: 0 auto;
+  margin: 10px auto;
   width: 500px !important;
   .thumbs-wrapper {
     display: flex !important;
@@ -64,13 +64,13 @@
   border-radius: 12px;
   width: 12px;
   height: 12px;
-  background-color: #404040;
+  background-color: #fff6f6;
 }
 .carousel-indicators li {
   border-radius: 12px;
   width: 12px;
   height: 12px;
-  background-color: #404040;
+  background-color: #fff4f4;
 }
 .carousel-indicators .active {
   background-color: white;

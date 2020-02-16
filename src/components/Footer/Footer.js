@@ -6,36 +6,43 @@ const Footer = () => {
     <footer className="container-fluid">
       <div className="container">
         <div className="row">
-          <div className="col-md-3 col-sm-6">
+          <div className="col-md-4 col-sm-6">
             <div className="footer-pad social-media">
               <h4>Heinsberg</h4>
               <p>bodenständig. weitsichtig </p>
             </div>
           </div>
 
-          <div className="col-md-3 col-sm-6">
+          <div className="col-md-4 col-sm-6">
             <div className="footer-pad social-media">
               <h4>Links</h4>
               <ul className="list-unstyled">
                 <li>
-                  <Link className="alink" to="/freizeitunderholung">Freizeit§Erholung</Link>
+                  <Link className="alink" to="/freizeitunderholung">
+                    Freizeit§Erholung
+                  </Link>
                 </li>
                 <li>
-                  <Link className="alink" to="/essenundtrinken">Essen&Trinken</Link>
+                  <Link className="alink" to="/essenundtrinken">
+                    Essen&Trinken
+                  </Link>
                 </li>
                 <li>
-                  <Link className="alink" to="/uebernachten">Übernachten</Link>
+                  <Link className="alink" to="/uebernachten">
+                    Übernachten
+                  </Link>
                 </li>
                 <li>
-                  <Link className="alink" to="/veranstallungen">Veranstallungen</Link>
+                  <Link className="alink" to="/veranstallungen">
+                    Veranstallungen
+                  </Link>
                 </li>
               </ul>
             </div>
             <div />
           </div>
-          <div className="col-md-3 col-sm-6"></div>
 
-          <div className="col-md-3 social-media">
+          <div className="col-md-4 social-media">
             <h4>Follow Us</h4>
             <ul className="social-network social-circle">
               <li>

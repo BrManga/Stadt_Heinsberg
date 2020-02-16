@@ -93,7 +93,7 @@ const Details = props => {
                   </div>
                 </div>
 
-                <div className="col-5 ">
+                <div className="col-5 d-flex justify-content-center align-items-center">
                   <img className="d-block image" src={image} alt="" />
                 </div>
               </div>
@@ -133,10 +133,7 @@ const Details = props => {
                 </div>
               </div>
               <div id="map-container">
-                <div
-                  ref={el => (mapContainer.current = el)}
-                  id="map"
-                />
+                <div ref={el => (mapContainer.current = el)} id="map" />
               </div>
             </div>
           </div>

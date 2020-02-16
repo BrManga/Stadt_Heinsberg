@@ -1,9 +1,49 @@
 //Restaurant tipleri arttirilarak ona göre filtreleme degisecek
 //google bewertungen alinabilir mi
-import medal1 from "./assets/images/essenundtrinken/Restaurant Medaillon/1.jpg";
-import medal2 from "./assets/images/essenundtrinken/Restaurant Medaillon/2.jpg";
-import medal3 from "./assets/images/essenundtrinken/Restaurant Medaillon/3.jpg";
-import medal4 from "./assets/images/essenundtrinken/Restaurant Medaillon/4.jpg";
+import medal1 from "./assets/images/essenundtrinken/RestaurantMedaillon/1.jpg";
+import medal2 from "./assets/images/essenundtrinken/RestaurantMedaillon/2.jpg";
+import medal3 from "./assets/images/essenundtrinken/RestaurantMedaillon/3.jpg";
+import medal4 from "./assets/images/essenundtrinken/RestaurantMedaillon/4.jpg";
+import crotia1 from "./assets/images/essenundtrinken/RestaurantCrotia/1.jpg";
+import crotia2 from "./assets/images/essenundtrinken/RestaurantCrotia/2.jpg";
+import crotia3 from "./assets/images/essenundtrinken/RestaurantCrotia/3.jpg";
+import crotia4 from "./assets/images/essenundtrinken/RestaurantCrotia/4.jpg";
+import brauhaus1 from "./assets/images/essenundtrinken/AltesBrauhaus/1.jpg";
+import brauhaus2 from "./assets/images/essenundtrinken/AltesBrauhaus/2.jpg";
+import brauhaus3 from "./assets/images/essenundtrinken/AltesBrauhaus/3.jpg";
+import brauhaus4 from "./assets/images/essenundtrinken/AltesBrauhaus/4.jpg";
+import ratskeller1 from "./assets/images/essenundtrinken/Stadthalle-Ratskeller/1.jpg";
+import ratskeller2 from "./assets/images/essenundtrinken/Stadthalle-Ratskeller/2.jpg";
+import ratskeller3 from "./assets/images/essenundtrinken/Stadthalle-Ratskeller/3.jpg";
+import ratskeller4 from "./assets/images/essenundtrinken/Stadthalle-Ratskeller/4.jpg";
+import elgreco1 from "./assets/images/essenundtrinken/ElGreco/1.jpg";
+import elgreco2 from "./assets/images/essenundtrinken/ElGreco/2.jpg";
+import elgreco3 from "./assets/images/essenundtrinken/ElGreco/3.jpg";
+import elgreco4 from "./assets/images/essenundtrinken/ElGreco/4.jpg";
+import heinsburger1 from "./assets/images/essenundtrinken/Heinsburger/1.png";
+import heinsburger2 from "./assets/images/essenundtrinken/Heinsburger/2.jpg";
+import heinsburger3 from "./assets/images/essenundtrinken/Heinsburger/3.jpg";
+import heinsburger4 from "./assets/images/essenundtrinken/Heinsburger/4.jpg";
+import china1 from "./assets/images/essenundtrinken/ChinaGarten/1.jpg";
+import china2 from "./assets/images/essenundtrinken/ChinaGarten/2.jpg";
+import china3 from "./assets/images/essenundtrinken/ChinaGarten/3.jpg";
+import china4 from "./assets/images/essenundtrinken/ChinaGarten/4.jpg";
+import lagrotta1 from "./assets/images/essenundtrinken/LaGrotta/1.jpg";
+import lagrotta2 from "./assets/images/essenundtrinken/LaGrotta/2.jpg";
+import lagrotta3 from "./assets/images/essenundtrinken/LaGrotta/3.jpg";
+import lagrotta4 from "./assets/images/essenundtrinken/LaGrotta/4.jpg";
+import begashaus1 from "./assets/images/freizeitunderholung/BegasHaus/1.jpeg";
+import begashaus2 from "./assets/images/freizeitunderholung/BegasHaus/2.jpg";
+import begashaus3 from "./assets/images/freizeitunderholung/BegasHaus/3.jpeg";
+import begashaus4 from "./assets/images/freizeitunderholung/BegasHaus/4.jpg";
+import stgangolf1 from "./assets/images/freizeitunderholung/StGangolf/1.jpeg";
+import stgangolf2 from "./assets/images/freizeitunderholung/StGangolf/2.jpg";
+import stgangolf3 from "./assets/images/freizeitunderholung/StGangolf/3.jpg";
+import stgangolf4 from "./assets/images/freizeitunderholung/StGangolf/4.jpg";
+import fliegen1 from "./assets/images/freizeitunderholung/Ultraleichtfliegen/1.jpg";
+import fliegen2 from "./assets/images/freizeitunderholung/Ultraleichtfliegen/2.jpg";
+import fliegen3 from "./assets/images/freizeitunderholung/Ultraleichtfliegen/3.jpg";
+import fliegen4 from "./assets/images/freizeitunderholung/Ultraleichtfliegen/4.jpg";
 
 export const data = {
   loading: false,
@@ -41,13 +81,8 @@ export const data = {
         "“Unser Restaurant Croatia bietet ausgewählte Speisen kroatischer und internationaler Küche in Heinsberg-Unterbruch. In mediterranem Ambiente und familiärer Atmosphäre bietet es sich geradezu an, zu schlemmen und die Seele baumeln zu lassen.",
       anschrift: "Wassenberger Str. 84, 52525 Heinsberg",
       phone: "02452 62216",
-      image:
-        "http://croatia-heinsberg.de/wp-content/gallery/gallery1/img_3605.jpg",
-      otherimages: [
-        "https://lh3.googleusercontent.com/proxy/V0JsBxoKhv9ZrUxFrMjTr6zXNGIaMJMUI-znqbfBydkNqrYJgnSISHfGhUHExv0IXNGkcfU9la6KdLeCgXskISWCNCvWiKXM4zzu6piQFBMuq6zy2kGxwTP4h5M",
-        "https://media-cdn.tripadvisor.com/media/photo-s/19/42/aa/28/photo2jpg.jpg",
-        "https://www.golocal.de/ublmedia/unsafe/fit-in/1500x1500/smart/https://www.golocal.de/media/33b764c57e3566ec7d2bab42d65661f3/ori_e24cd00ba6ac4b42.jpg"
-      ]
+      image: crotia1,
+      otherimages: [crotia2, crotia3, crotia4]
     },
     {
       id: 3,
@@ -61,13 +96,8 @@ export const data = {
         "Unsere mediterrane Küche mit italienischen und französischen Einflüssen, ist stets darauf bedacht, auch den individuellen Wünschen unserer Gäste nachzukommen. Unsere Tageskarte  mit saisonalen Spezialitäten, und einem vegetarischen Angebot, stellen wir nach Tageseinkauf zusammen.Hier gibt es immer Neuigkeiten.",
       anschrift: "Wurmstraße 4, 52525 Heinsberg/Unterbruch",
       phone: "02452 61035",
-      image:
-        "https://www.altesbrauhaus-heinsberg.de/wp-content/uploads/restaurant-altes-brauhaus-aussen.jpg",
-      otherimages: [
-        "https://www.altesbrauhaus-heinsberg.de/wp-content/uploads/Brauhaus-1.jpg",
-        "https://www.altesbrauhaus-heinsberg.de/wp-content/uploads/Brauhaus-7.jpg",
-        "https://www.altesbrauhaus-heinsberg.de/wp-content/uploads/Brauhaus-6.jpg"
-      ]
+      image: brauhaus1,
+      otherimages: [brauhaus2, brauhaus3, brauhaus4]
     },
     {
       id: 4,
@@ -81,13 +111,8 @@ export const data = {
         "Unsere Speisenangebote werden regelmäßig neu zusammengestellt. Dadurch können wir Ihnen abwechslungsreiche, kulinarische Freuden anbieten, die saisonal abgestimmt sind.Falls Sie dennoch einen anderen Wunsch haben sollten, fragen Sie uns.",
       anschrift: "Apfelstraße 60, 52525 Heinsberg",
       phone: "02452 5020",
-      image:
-        "https://www.stadthalle-heinsberg.de/images/00_startseite/header/Ratskeller_Header5.jpg",
-      otherimages: [
-        "https://www.stadthalle-heinsberg.de/images/00_startseite/header/Ratskeller_Header1.jpg",
-        "https://www.stadthalle-heinsberg.de/images/00_startseite/header/Ratskeller_Header3.jpg",
-        "https://www.stadthalle-heinsberg.de/images/00_startseite/header/Ratskeller_Header2.jpg"
-      ]
+      image: ratskeller1,
+      otherimages: [ratskeller2, ratskeller3, ratskeller4]
     },
     {
       id: 5,
@@ -101,13 +126,8 @@ export const data = {
         "Das Küchen-Team kocht mit Liebe und Leidenschaft jeder unserer einmaligen Spezialitäten. Das freundliche Service-Team von “El Greco” serviert Ihnen diese Köstlichkeiten mit viel Aufmerksamkeit und Sorgfalt.",
       anschrift: "Kempener Str. 110, 52525 Heinsberg",
       phone: "02452 9783777",
-      image:
-        "https://i1.wp.com/elgreco.rest/wp-content/uploads/2016/03/4.jpg?fit=1200%2C656&ssl=1",
-      otherimages: [
-        "https://i2.wp.com/elgreco.rest/wp-content/uploads/2016/03/5-1.jpg?fit=1200%2C800&ssl=1",
-        "https://i2.wp.com/elgreco.rest/wp-content/uploads/2016/03/1-2.jpg?fit=1200%2C741&ssl=1",
-        "https://i0.wp.com/elgreco.rest/wp-content/uploads/2016/03/7-1.jpg?fit=1200%2C800&ssl=1"
-      ]
+      image: elgreco1,
+      otherimages: [elgreco2, elgreco3, elgreco4]
     },
     {
       id: 6,
@@ -121,12 +141,8 @@ export const data = {
         "Für einen guten Gastronom ist es wünschenswert, dass sich seine Gäste wohlfühlen, durch Mund-zu-Mund-Propaganda sein Betrieb einen hohen Bekanntheitsgrad erlangt und dass sein Team ihn zu jeder Tages- und Nachtzeit gebührend vertritt. Selbstverständlich wünschen auch wir uns all das.Bei der Speisenauswahl legt Heinsburger seinen Fokus auf innovative, regionale und exotisch angehauchte Kreationen, die dem Begriff 'Fast Food' eine neue Bedeutung geben. Da jeder unserer Burger frisch aus 100%igen Rindfleisch-Scheiben und mit Liebe zum Detail hergestellt wird, dauert die Zubereitung in der Regel 7 - 12 Minuten - wenn viel los ist, auch mal länger.",
       anschrift: "Hochstraße 177, 52525 Heinsberg",
       phone: "02452 9671225",
-      image: "https://www.heinsburger.de/files/content/logo-full.png",
-      otherimages: [
-        "https://www.heinsburger.de/files/content/produkte/heinsburger_der_fischer.jpg",
-        "https://www.heinsburger.de/files/content/produkte/heinsburger_der_gladiator.jpg",
-        "https://www.heinsburger.de/files/content/produkte/heinsburger_der_boss.jpg"
-      ]
+      image: heinsburger1,
+      otherimages: [heinsburger2, heinsburger3, heinsburger4]
     },
     {
       id: 7,
@@ -140,13 +156,8 @@ export const data = {
         "Genießen Sie in unserem Restaurant ein unvergessliches kulinarisches Erlebnis.Wir führen Ihre Bestellung nach Eingang aus und bereiten alles ganz frisch für Sie zu… Genießen Sie Spezialitäten vom Meisterkoch die direkt vor Ihnen zubereitet werden.",
       anschrift: "Ostpromenade 103, 52525 Heinsberg",
       phone: "02452 1809780",
-      image:
-        "https://s3-media0.fl.yelpcdn.com/bphoto/i-0lhgrhRkxNxgc1X-p92A/o.jpg",
-      otherimages: [
-        "http://chinagarten-heinsberg.de/wp-content/uploads/2017/10/widget1.jpg",
-        "http://chinagarten-heinsberg.de/wp-content/uploads/2017/10/widget2.jpg",
-        "http://chinagarten-heinsberg.de/wp-content/uploads/2017/10/slide1-1.jpg"
-      ]
+      image: china1,
+      otherimages: [china2, china3, china4]
     },
     {
       id: 8,
@@ -160,13 +171,8 @@ export const data = {
         "Ein offener, herzlicher Ort, an dem man so sein kann, wie man ist und sich wie zu Hause fühlt …",
       anschrift: "Kempener Str. 57, 52525 Heinsberg",
       phone: "02452 22040",
-      image:
-        "https://www.deutschlandgourmet.info/img/kuechen/sonstige/klein/10.jpg",
-      otherimages: [
-        "https://www.deutschlandgourmet.info/img/kuechen/sonstige/klein/01.jpg",
-        "https://www.deutschlandgourmet.info/img/kuechen/sonstige/klein/02.jpg",
-        "https://www.deutschlandgourmet.info/img/kuechen/sonstige/klein/07.jpg"
-      ]
+      image: lagrotta1,
+      otherimages: [lagrotta2, lagrotta3, lagrotta4]
     }
   ],
   freizeitunderholung: [
@@ -182,13 +188,8 @@ export const data = {
       website: "https://begas-haus.de/",
       anschrift: "Hochstraße 21 52525 Heinsberg",
       phone: "02452 977690",
-      image:
-        "https://www.heinsberg.de/website/var/tmp/thumb_102__auto_1740e1f92ebab1592a49f096678aae02.jpeg",
-      otherimages: [
-        "https://niederrhein-tourismus.de/wp-content/uploads/2018/10/begas_haus_2018_001-1024x684.jpg",
-        "https://www.heinsberg.de/website/var/tmp/thumb_1755__auto_a0e301e00452ca6abc7bbc1c98e803af.jpeg",
-        "https://rp-online.de/imgs/32/2/2/7/6/2/9/5/5/tok_5f8a2a936ff736ddbe1b4da252272f27/w940_h528_x470_y264_6daf61be8908a9d2.jpg"
-      ]
+      image: begashaus1,
+      otherimages: [begashaus2, begashaus3, begashaus4]
     },
     {
       id: 10,
@@ -202,13 +203,8 @@ export const data = {
       phone: "",
       details:
         "St. Gangolf ist eine römisch-katholische Propsteikirche und ehemalige Stiftskirche in der rheinischen Stadt Heinsberg. Sie steht als Baudenkmal unter Denkmalschutz. Pfarrpatron ist der heilige Gangolf, ein burgundischer Ritter und Märtyrer des 8. Jahrhunderts. Die Kirche steht erhöht über der Stadt auf dem sogenannten Kirchberg, dem als Vorburg der Burg Heinsberg dienenden Teil der Heinsberger Motte. Die Pfarrgemeinde von St. Gangolf gehört zum Bistum Aachen.",
-      image:
-        "https://www.heinsberg.de/website/var/tmp/thumb_100__auto_1740e1f92ebab1592a49f096678aae02.jpeg",
-      otherimages: [
-        "https://sankt-gangolf-heinsberg.de/export/sites/region-heinsberg/pfarrei-sankt-gangolf-heinsberg/.galleries/images/255509_original_R_K_B.jpg_38856729.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Heinsberg_Hl._Gangolf_Orgel_2.jpg/220px-Heinsberg_Hl._Gangolf_Orgel_2.jpg",
-        "https://sankt-gangolf-heinsberg.de/export/sites/region-heinsberg/pfarrei-sankt-gangolf-heinsberg/.galleries/images/255509_original_R_K_B.jpg_38856729.jpg"
-      ]
+      image: stgangolf1,
+      otherimages: [stgangolf2, stgangolf3, stgangolf4]
     },
     {
       id: 11,
@@ -222,12 +218,8 @@ export const data = {
         "Der Ultraleicht-Flugclub Heinsberg-Selfkant e.V. besteht zur Zeit (Stand Dezember 2017) aus 184 Mitgliedern, davon 79 aktive Mitglieder, 103 Förder- und 2 Ehrenmitglieder.",
       anschrift: "Am Vossenweg 35, 52525 Heinsberg",
       phone: "02452 180206",
-      image: "https://heinslive.blog/wp-content/uploads/klein_IMG_0238.jpg",
-      otherimages: [
-        "https://ul-flugschule-heinsberg.de/index_htm_files/22.jpg",
-        "https://ul-flugschule-heinsberg.de/index_htm_files/871.jpg",
-        "https://ul-flugschule-heinsberg.de/index_htm_files/870.jpg"
-      ]
+      image: fliegen1,
+      otherimages: [fliegen2, fliegen3, fliegen4]
     },
     {
       id: 12,
