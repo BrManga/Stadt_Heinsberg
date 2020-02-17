@@ -84,7 +84,26 @@ import hensensresidenz1 from "./assets/images/uebernachten/hensensresidenz/1.jpg
 import hensensresidenz2 from "./assets/images/uebernachten/hensensresidenz/2.jpg";
 import hensensresidenz3 from "./assets/images/uebernachten/hensensresidenz/3.jpg";
 import hensensresidenz4 from "./assets/images/uebernachten/hensensresidenz/4.jpg";
-
+import wintermarkt1 from "./assets/images/veranstallungen/wintermarkt/1.jpg";
+import wintermarkt2 from "./assets/images/veranstallungen/wintermarkt/2.jpg";
+import wintermarkt3 from "./assets/images/veranstallungen/wintermarkt/3.jpg";
+import wintermarkt4 from "./assets/images/veranstallungen/wintermarkt/4.jpg";
+import ausstellungbegashaus1 from "./assets/images/veranstallungen/ausstellungbegashaus/1.jpg";
+import ausstellungbegashaus2 from "./assets/images/veranstallungen/ausstellungbegashaus/2.jpg";
+import ausstellungbegashaus3 from "./assets/images/veranstallungen/ausstellungbegashaus/3.jpg";
+import ausstellungbegashaus4 from "./assets/images/veranstallungen/ausstellungbegashaus/4.jpg";
+import dennis1 from "./assets/images/veranstallungen/Dennis/1.jpg";
+import dennis2 from "./assets/images/veranstallungen/Dennis/2.jpg";
+import dennis3 from "./assets/images/veranstallungen/Dennis/3.jpg";
+import dennis4 from "./assets/images/veranstallungen/Dennis/4.jpg";
+import ingridkuhne1 from "./assets/images/veranstallungen/ingridkohne/1.jpg";
+import ingridkuhne2 from "./assets/images/veranstallungen/ingridkohne/2.jpg";
+import ingridkuhne3 from "./assets/images/veranstallungen/ingridkohne/3.jpg";
+import ingridkuhne4 from "./assets/images/veranstallungen/ingridkohne/4.jpg";
+import steffi1 from "./assets/images/veranstallungen/Steffi/1.jpg";
+import steffi2 from "./assets/images/veranstallungen/Steffi/2.jpg";
+import steffi3 from "./assets/images/veranstallungen/Steffi/3.jpg";
+import steffi4 from "./assets/images/veranstallungen/Steffi/4.jpg";
 export const data = {
   loading: false,
   sorted: {
@@ -409,26 +428,84 @@ export const data = {
       otherimages: [hensensresidenz2, hensensresidenz3, hensensresidenz4]
     }
   ],
-  veranstaltungen: [
+  veranstallungen: [
     {
-      id: 17,
-      name: "BEGAS HAUS - Museum",
-      sterne: "***",
-      googlebewertungen: 4.1,
-      type: "hotel",
-      slug: "begashaus",
+      id: 21,
+      name: "Weihnachts- und Wintermarkt",
+      type: "event",
+      startdate: "23.11.2019",
+      dates: "25. November 2019 bis 05. Januar 2020 ",
+      slug: "wintermarkt",
       details:
-        "Das Begas Haus ist das Museum für Kunst und Regionalgeschichte in Heinsberg. Es erhielt seinen Namen nach der über vier Generationen wirkenden Künstlerfamilie Begas, deren Stammvater Carl Joseph Begas 1794 in Heinsberg geboren wurde.An das Museum angegliedert ist außerdem ein von der Lebenshilfe geführtes Café, in dem gelegentlich unter dem Motto „Kultur ohne Barrieren“ auch Kunst ausgestellt wird. In direkter Nähe befinden sich außerdem die Heinsberger Propsteikirche St. Gangolf sowie die Burg Heinsberg.",
+        "Die Stadt Heinsberg lädt gemeinsam mit dem Gewerbe- und Verkehrsverein und der Heinsberg Card zum 'Heinsberger Weihnachts- und Wintermarkt & Heinsberg on Ice' ein. Wir laden Sie zu den spannenden Wettkämpfen auf der neuen Curlingbahn mit tollen Gewinnen ein. Genießen Sie zudem die gemütliche Atmosphäre des Weihnachtsmarktes und besuchen Sie eins der zahlreichen attraktiven Geschäfte in der Kreisstadt.",
+      website: "",
+      anschrift: "Marktplatz Heinsberg",
+      phone: "",
+      image: wintermarkt1,
+      otherimages: [wintermarkt2, wintermarkt3, wintermarkt4]
+    },
+    {
+      id: 22,
+      name: "Ausstellung 'Familientreffen'",
+      type: "event",
+      startdate: "09.02.2020",
+      dates: "09. Februar 2020",
+      slug: "ausstellungbegashaus",
+      details:
+        "Das BEGAS HAUS – Museum für Kunst und Regionalgeschichte Heinsberg präsentiert ab dem 9. Februar bis zum 29. März 2020 die neue Wechselausstellung „Familientreffen - Bilder von Martin Lersch zur Begasfamilie 1794-1997“. Die Vernissage ist am 9. Februar 2020 um 12 Uhr.",
       website: "https://begas-haus.de/",
-      anschrift: "Hochstraße 21 52525 Heinsberg",
-      phone: "02452 977690",
-      image:
-        "https://www.heinsberg.de/website/var/tmp/thumb_102__auto_1740e1f92ebab1592a49f096678aae02.jpeg",
+      anschrift: "Hochstraße 19-21, 52525 Heinsberg",
+      phone: "0 24 52 - 977 69 ",
+      image: ausstellungbegashaus1,
       otherimages: [
-        "https://niederrhein-tourismus.de/wp-content/uploads/2018/10/begas_haus_2018_001-1024x684.jpg",
-        "https://www.heinsberg.de/website/var/tmp/thumb_1755__auto_a0e301e00452ca6abc7bbc1c98e803af.jpeg",
-        "https://rp-online.de/imgs/32/2/2/7/6/2/9/5/5/tok_5f8a2a936ff736ddbe1b4da252272f27/w940_h528_x470_y264_6daf61be8908a9d2.jpg"
+        ausstellungbegashaus2,
+        ausstellungbegashaus3,
+        ausstellungbegashaus4
       ]
+    },
+    {
+      id: 23,
+      name: "Der Dennis - Ich seh voll reich aus!",
+      type: "event",
+      startdate: "09.05.2020",
+      dates: "09. Mai 2020",
+      slug: "derdennis",
+      details:
+        "Der Dennis sieht in ausgewählten Städten nochmal ziemlich reich aus! Mit seinem Image als Berufsschüler aus Leidenschaft hat der sympathische 21-Jährige mittlerweile schon einen Legendenstatus auf deutschem Boden. Am Samstag 09.05.2020, 20:00",
+      website: "https://der-dennis.com/",
+      anschrift: "Festhalle Oberbruch",
+      phone: "",
+      image: dennis1,
+      otherimages: [dennis2, dennis3, dennis4]
+    },
+    {
+      id: 24,
+      name: "Ingrid Kühne - Okay, mein Fehler!",
+      type: "event",
+      startdate: "28.11.2020",
+      dates: "28. November 2020",
+      slug: "okaymeinfehler",
+      details:
+        "Ingrid Kühne geht es wohl, wie vielen anderen - eigentlich ist sie sowieso immer alles Schuld. Mit einem beschwichtigenden 'Okay, mein Fehler!' will sie einfach nur ihre Ruhe. In ihrem zweiten Bühnenprogramm analysiert sie, was alles so schiefgeht und wo man alles schuld sein kann, vor allem warum, wieviel, wie spät und wie lange. 2000",
+      website: "https://www.ingrid-kuehne.de/",
+      anschrift: "Waldfeucht Festhalle Braunsrath",
+      phone: "",
+      image: ingridkuhne1,
+      otherimages: [ingridkuhne2, ingridkuhne3, ingridkuhne4]
+    },
+    {
+      id: 25,
+      name: "Steffi Neu & Hastenraths Will",
+      type: "event",
+      startdate: "25.03.2020",
+      dates: "25. März 2020",
+      slug: "okaymeinfehler",
+      details: "Steffi Neu interviewt Hastenraths Will und umgekehrt. 2000",
+      website: "http://www.hastenrathswill.de/tourplan",
+      anschrift: "Aula des Gymnasiums Dr. Ruben-Strasse 41836 Hückelhoven",
+      phone: "",
+      image: steffi1,
+      otherimages: [steffi2, steffi3, steffi4]
     }
   ]
 };

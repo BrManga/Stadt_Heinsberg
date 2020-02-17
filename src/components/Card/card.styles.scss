@@ -1,6 +1,7 @@
 .card {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
+  padding-bottom: 0 !important;
 }
 .card:hover {
   box-shadow: var(--darkShadow);

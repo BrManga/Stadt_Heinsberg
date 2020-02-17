@@ -19,7 +19,7 @@ class HeinsbergContextProvider extends React.Component {
       freizeitunderholung: [...this.state.freizeitunderholung],
       essenundtrinken: [...this.state.essenundtrinken],
       uebernachten: [...this.state.uebernachten],
-      veranstaltungen: [...this.state.veranstaltungen]
+      veranstaltungen: [...this.state.veranstallungen]
     };
     this.setState({ ...this.state, sorted: sortedAll, loading: false }, () => {
       console.log("sil bastan", this.state);
@@ -98,7 +98,9 @@ class HeinsbergContextProvider extends React.Component {
       console.log("from filterFreizeitUndErholun in context file: ", this.state)
     );
   };
-
+  filterVeranstallungen() {
+    //BURADAYIM DEVAM
+  }
   handleChange = async e => {
     const target = e.target;
     const value = target.value;
@@ -106,8 +108,10 @@ class HeinsbergContextProvider extends React.Component {
     console.log("valueee", value);
     //if there will be a new type of something you should enter it here inside conditions
     await this.setState({ ...this.state, [name]: value });
-    console.log("valueee1", value);
-
+    console.log("valueee1", this.state);
+    if (value === "aufsteigend" || value === "absteigend") {
+      await this.filterVeranstallungen();
+    }
     if (value === "sehenswertes" || value === "sport") {
       await this.filterFreizeitUndErholung();
     } else if (

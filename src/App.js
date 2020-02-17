@@ -9,7 +9,9 @@ import FreizeitUndErholung from "./pages/FreizeitUndErholung/FreizeitUndErholung
 import Details from "./pages/Details/Details";
 import Historie from "./pages/Historie/Historie";
 import Stadtplan from "./pages/Stadtplan/Stadtplan";
-import Uebernachten from "./pages/Uebernachten/Uebernachten"
+import Uebernachten from "./pages/Uebernachten/Uebernachten";
+import Veranstallungen from "./pages/Veranstallungen/Veranstallungen";
+
 function App() {
   return (
     <>
@@ -34,11 +36,11 @@ function App() {
         <Route exact path="/uebernachten">
           <Uebernachten />
         </Route>
-        <Route
-          exact
-          path="/uebernachten/:slug"
-          component={Details}
-        ></Route>
+        <Route exact path="/uebernachten/:slug" component={Details}></Route>
+        <Route exact path="/veranstallungen">
+          <Veranstallungen />
+        </Route>
+        <Route exact path="/veranstallungen/:slug" component={Details}></Route>
         <Route exact path="/historie" component={Historie} />
         <Route exact path="/stadtplan" component={Stadtplan} />
       </Switch>
