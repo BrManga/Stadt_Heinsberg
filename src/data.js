@@ -44,6 +44,46 @@ import fliegen1 from "./assets/images/freizeitunderholung/Ultraleichtfliegen/1.j
 import fliegen2 from "./assets/images/freizeitunderholung/Ultraleichtfliegen/2.jpg";
 import fliegen3 from "./assets/images/freizeitunderholung/Ultraleichtfliegen/3.jpg";
 import fliegen4 from "./assets/images/freizeitunderholung/Ultraleichtfliegen/4.jpg";
+import ballon1 from "./assets/images/freizeitunderholung/Ballon/1.jpg";
+import ballon2 from "./assets/images/freizeitunderholung/Ballon/2.jpg";
+import ballon3 from "./assets/images/freizeitunderholung/Ballon/3.jpg";
+import ballon4 from "./assets/images/freizeitunderholung/Ballon/4.jpg";
+import bodyflying1 from "./assets/images/freizeitunderholung/Bodyflying/1.jpg";
+import bodyflying2 from "./assets/images/freizeitunderholung/Bodyflying/2.jpg";
+import bodyflying3 from "./assets/images/freizeitunderholung/Bodyflying/3.jpg";
+import bodyflying4 from "./assets/images/freizeitunderholung/Bodyflying/4.jpg";
+import kreisverband1 from "./assets/images/freizeitunderholung/Kreisverband/1.jpg";
+import kreisverband2 from "./assets/images/freizeitunderholung/Kreisverband/2.jpg";
+import kreisverband3 from "./assets/images/freizeitunderholung/Kreisverband/3.jpg";
+import kreisverband4 from "./assets/images/freizeitunderholung/Kreisverband/4.jpg";
+import windmuhle1 from "./assets/images/freizeitunderholung/WindMuehle/1.jpg";
+import windmuhle2 from "./assets/images/freizeitunderholung/WindMuehle/2.jpg";
+import windmuhle3 from "./assets/images/freizeitunderholung/WindMuehle/3.jpg";
+import windmuhle4 from "./assets/images/freizeitunderholung/WindMuehle/4.jpg";
+import marktplatz1 from "./assets/images/freizeitunderholung/Marktplatz/1.jpg";
+import marktplatz2 from "./assets/images/freizeitunderholung/Marktplatz/2.jpg";
+import marktplatz3 from "./assets/images/freizeitunderholung/Marktplatz/3.jpg";
+import marktplatz4 from "./assets/images/freizeitunderholung/Marktplatz/4.jpg";
+import corsten1 from "./assets/images/uebernachten/hotelcorsten/1.jpg";
+import corsten2 from "./assets/images/uebernachten/hotelcorsten/2.jpeg";
+import corsten3 from "./assets/images/uebernachten/hotelcorsten/3.jpg";
+import corsten4 from "./assets/images/uebernachten/hotelcorsten/4.jpg";
+import hansen1 from "./assets/images/uebernachten/hotelhansen/1.jpg";
+import hansen2 from "./assets/images/uebernachten/hotelhansen/2.jpg";
+import hansen3 from "./assets/images/uebernachten/hotelhansen/3.jpg";
+import hansen4 from "./assets/images/uebernachten/hotelhansen/4.jpg";
+import sarah1 from "./assets/images/uebernachten/hotelsarah/1.jpg";
+import sarah2 from "./assets/images/uebernachten/hotelsarah/2.jpg";
+import sarah3 from "./assets/images/uebernachten/hotelsarah/3.jpg";
+import sarah4 from "./assets/images/uebernachten/hotelsarah/4.jpg";
+import glanzstoff1 from "./assets/images/uebernachten/glanzstoff/1.jpg";
+import glanzstoff2 from "./assets/images/uebernachten/glanzstoff/2.jpg";
+import glanzstoff3 from "./assets/images/uebernachten/glanzstoff/3.jpg";
+import glanzstoff4 from "./assets/images/uebernachten/glanzstoff/4.jpg";
+import hensensresidenz1 from "./assets/images/uebernachten/hensensresidenz/1.jpg";
+import hensensresidenz2 from "./assets/images/uebernachten/hensensresidenz/2.jpg";
+import hensensresidenz3 from "./assets/images/uebernachten/hensensresidenz/3.jpg";
+import hensensresidenz4 from "./assets/images/uebernachten/hensensresidenz/4.jpg";
 
 export const data = {
   loading: false,
@@ -233,13 +273,8 @@ export const data = {
         "Die Buchungsabwicklung übernehmen wir. Steigen Sie ein zu einer nicht alltäglichen Reise. Lassen Sie sich bezaubern von der Stille und dem herrlichen Panorama, das Ihnen nur eine Ballonfahrt in Heinsberg oder Umgebung bieten kann und lassen den Alltag am Boden zurück! Sie steigen in den Korb ein, der Pilot löst die Leinen und schon schweben Sie davon. Sie fahren bis zu 90 Minuten über die Landschaft bevor Sie wieder landen. Nachdem Sie wieder festen Boden unter den Füssen haben, erfolgt die Ballontaufe mit Sekt.",
       anschrift: "Melatenstraße, 52525 Waldfeucht",
       phone: "0241 7018924",
-      image:
-        "https://www.skytravel24.de/images/produkte/google-ballonfahrt-400-400.png",
-      otherimages: [
-        "http://www.ac-ballonteam.de/images/Bild-Startseite.jpg",
-        "https://www.heinsbergerdeal.de/bilder/deals/oecherdeal-ballonfahrt-3.jpg",
-        "http://www.ac-ballonteam.de/images/Startplaetze/Start-Alsdorf.jpg"
-      ]
+      image: ballon1,
+      otherimages: [ballon2, ballon3, ballon4]
     },
     {
       id: 13,
@@ -253,13 +288,8 @@ export const data = {
         "Bodyflying ist aber auch eine Sportart für Jedermann. Jung oder alt, klein oder groß, leicht oder schwer, jeder kann das Gefühl der Schwerelosigkeit, das Schweben im Luftstrom erleben. Für Betriebsfeste, Incentives, Firmen-Events, individuellen Freizeitsport oder Funsport in der Gruppe, wir bieten für alle Interessenten das geeignete Programm in der Air Power Arena.",
       anschrift: "Rheinstrasse 6a 41836 Hückelhoven",
       phone: "02433 938655",
-      image:
-        "http://www.air-power-arena.de/bilder/arena/airpowerarena_outside.jpg",
-      otherimages: [
-        "http://www.air-power-arena.de/bilder/arena/P0172620.jpg",
-        "http://www.air-power-arena.de/bilder/leiste/leiste_04.jpg",
-        "http://www.air-power-arena.de/bilder/leiste/leiste_05.jpg"
-      ]
+      image: bodyflying1,
+      otherimages: [bodyflying2, bodyflying3, bodyflying4]
     },
     {
       id: 14,
@@ -273,13 +303,8 @@ export const data = {
         "Der Kreisverband der Reit- und Fahrvereine Heinsberg , auch KRF-Heinsberg genannt, hat 17 Mitgliedsvereine. Aufgabe des Verbandes ist die Interessenvertretung der ihm angeschlossenen Vereine, sowie die Ausbildung und Förderung der Reiter/innen.",
       anschrift: "Rodebachstraße 23, 52538 Gangelt",
       phone: "02454 8777",
-      image:
-        "https://www.kreis-heinsberg.de/img/nl/pferd_mit_reiter_Homepage_Kreis_klein.jpg",
-      otherimages: [
-        "https://www.wassenberg.de/assets/2017/02/paard_09321-687x1030.jpg",
-        "https://www.wassenberg.de/assets/2017/02/Kringshof-Pferde-1-1030x773.jpg",
-        "https://www.wassenberg.de/assets/2017/02/Kringshof-Pferde-1030x773.jpg"
-      ]
+      image: kreisverband1,
+      otherimages: [kreisverband2, kreisverband3, kreisverband4]
     },
     {
       id: 15,
@@ -293,13 +318,8 @@ export const data = {
       website: "http://www.muehlenverein-selfkant.de/",
       anschrift: "Zur Kornmühle 7, 52525 Heinsberg",
       phone: "",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/d/da/Heinsberg-Kirchhoven_Denkmal-Nr._40%2C_Zur_Kornm%C3%BChle_%284178%29.jpg",
-      otherimages: [
-        "http://www.heinsberg.de/kultur/luembacher_windmuehle_kirchhoven.jpg",
-        "https://www.aachener-zeitung.de/imgs/48/3/0/9/5/0/7/0/5/tok_91be2f6327f66d25f7f623c23957effc/w900_h498_x470_y290_cdb40cafe6969ad4.jpg",
-        "https://www.aachener-nachrichten.de/imgs/41/5/5/6/9/0/9/6/5/tok_96443b99736b1ca3eb1a4221fc303772/w950_h526_x599_y417_ZVA_55342801_1258853351_RGB_190_1_1_4f1db0025387bea7d29cbafebedd0394_1559556660_1258853351_f52fa591e3-73612e963ebb5b7e.jpg"
-      ]
+      image: windmuhle1,
+      otherimages: [windmuhle2, windmuhle3, windmuhle4]
     },
     {
       id: 16,
@@ -313,43 +333,89 @@ export const data = {
       website: "http://www.heinsberg.de/",
       anschrift: "Markt52525 Heinsberg",
       phone: "",
-      image: "http://www.heinsberg.de/bilder_veranstaltungen/p1010806.jpg",
-      otherimages: [
-        "https://www.niederrhein.de/images/Stadt/Heinsberg/Niederrhein_de_Heinsberg.jpg",
-        "http://gv-heinsberg.de/wp-content/uploads/cache/images/2020/02/web-DSC_00122/1117143056.jpg",
-        "http://gv-heinsberg.de/wp-content/uploads/2014/10/web-Abendeinkauf2.jpg"
-      ]
+      image: marktplatz1,
+      otherimages: [marktplatz2, marktplatz3, marktplatz4]
     }
   ],
   uebernachten: [
     {
-      id: 18,
-      name: "BEGAS HAUS - Museum",
-      popularität: "****",
-      googlebewertungen: 4.2,
-      type: "sehenswertes",
-      slug: "begashaus",
+      id: 17,
+      name: "Hotel Corsten",
+      googlebewertungen: 4.1,
+      type: "hotel",
+      slug: "hotelcorsten",
       details:
-        "Das Begas Haus ist das Museum für Kunst und Regionalgeschichte in Heinsberg. Es erhielt seinen Namen nach der über vier Generationen wirkenden Künstlerfamilie Begas, deren Stammvater Carl Joseph Begas 1794 in Heinsberg geboren wurde.An das Museum angegliedert ist außerdem ein von der Lebenshilfe geführtes Café, in dem gelegentlich unter dem Motto „Kultur ohne Barrieren“ auch Kunst ausgestellt wird. In direkter Nähe befinden sich außerdem die Heinsberger Propsteikirche St. Gangolf sowie die Burg Heinsberg.",
-      website: "https://begas-haus.de/",
-      anschrift: "Hochstraße 21 52525 Heinsberg",
-      phone: "02452 977690",
-      image:
-        "https://www.heinsberg.de/website/var/tmp/thumb_102__auto_1740e1f92ebab1592a49f096678aae02.jpeg",
-      otherimages: [
-        "https://niederrhein-tourismus.de/wp-content/uploads/2018/10/begas_haus_2018_001-1024x684.jpg",
-        "https://www.heinsberg.de/website/var/tmp/thumb_1755__auto_a0e301e00452ca6abc7bbc1c98e803af.jpeg",
-        "https://rp-online.de/imgs/32/2/2/7/6/2/9/5/5/tok_5f8a2a936ff736ddbe1b4da252272f27/w940_h528_x470_y264_6daf61be8908a9d2.jpg"
-      ]
+        "Hotel Corsten has been owned by the Corsten Family since 1921 and is currently led in the 4th generation. We are located in the city center of Heinsberg and have good connections to the freeway, the local bus station and the future train station just a few meters from the hotel.",
+      website: "https://www.hotel-corsten.de/",
+      anschrift: "Hochstraße 160, 52525 Heinsberg",
+      phone: "02452 1860",
+      image: corsten1,
+      otherimages: [corsten2, corsten3, corsten4]
+    },
+    {
+      id: 18,
+      name: "Hotel Hansen",
+      googlebewertungen: 4.1,
+      type: "hotel",
+      slug: "hotelhansen",
+      details:
+        "Mit viel Farbe, frischen Ideen und neuem Interieur haben wir Zimmer und Restauration einladend, gemütlich und gastfreundlich gestaltet. Ob modernes Business-Hotel für Geschäftsreisende und Privatpersonen oder geschmackvolles Genießer Restaurant–hier ist alles da für einen angenehmen Aufenthalt und erlebnisreiche Stunden.",
+      website: "https://www.hotel-hansen.eu/",
+      anschrift: "Erkelenzer Str. 59-61, 52525 Heinsberg",
+      phone: "02452 95850",
+      image: hansen1,
+      otherimages: [hansen2, hansen3, hansen4]
+    },
+    {
+      id: 19,
+      name: "Hotel Sarah",
+      googlebewertungen: 4.7,
+      type: "hotel",
+      slug: "hotelsarah",
+      details:
+        "Unser charmantes familien geführtes Hotel Sarah befindet sich im westlichsten Kreis Deutschlands unweit der deutsch-niederländischen Grenze im Heinsberger Vorort Dremmen. Das Hotel bietet Ihnen mit seinen 11 modern und komfortabel eingerichteten Zimmern Wohlfühlatmosphäre zu fairen Preisen. Für Langzeit-Gäste oder Familien stehen Ihnen auch zwei schöne Appartments zur Verfügung.",
+      website: "https://www.hotel-sarah.de/",
+      anschrift: "Erkelenzer Str. 22, 52525 Heinsberg",
+      phone: "02452 158743",
+      image: sarah1,
+      otherimages: [sarah2, sarah3, sarah4]
+    },
+    {
+      id: 20,
+      name: "Gästehaus Villa Glanzstoff",
+      googlebewertungen: 4.8,
+      type: "hotel",
+      slug: "villaglanzstoff",
+      details:
+        "Die Villa Glanzstoff ist ein modernes Gästehaus in Heinsberg-Oberbruch. Anfang 2019 frisch renoviert, bietet es acht individuell eingerichtete Zimmer sowie einen Raum zum Feiern für verschiedene Anlässe. Die Villa ist umgeben von einer großflächige Parkanlage, die zum Entspannen und Feiern einlädt.",
+      website: "https://www.villa-glanzstoff.de/",
+      anschrift: "Boos-Fremery-Straße 63, 52525 Heinsberg",
+      phone: "01520 4527605",
+      image: glanzstoff1,
+      otherimages: [glanzstoff2, glanzstoff3, glanzstoff4]
+    },
+    {
+      id: 20,
+      name: "Hensens Residenz",
+      googlebewertungen: 4.8,
+      type: "hotel",
+      slug: "hensensresidenz",
+      details:
+        "Die Villa Glanzstoff ist ein modernes Gästehaus in Heinsberg-Oberbruch. Anfang 2019 frisch renoviert, bietet es acht individuell eingerichtete Zimmer sowie einen Raum zum Feiern für verschiedene Anlässe. Die Villa ist umgeben von einer großflächige Parkanlage, die zum Entspannen und Feiern einlädt.",
+      website: "https://www.rainerhensen.de/",
+      anschrift: "Feldstraße 48-50, 52525 Heinsberg",
+      phone: "02453 802",
+      image: hensensresidenz1,
+      otherimages: [hensensresidenz2, hensensresidenz3, hensensresidenz4]
     }
   ],
   veranstaltungen: [
     {
       id: 17,
       name: "BEGAS HAUS - Museum",
-      popularität: "****",
-      googlebewertungen: 4.2,
-      type: "sehenswertes",
+      sterne: "***",
+      googlebewertungen: 4.1,
+      type: "hotel",
       slug: "begashaus",
       details:
         "Das Begas Haus ist das Museum für Kunst und Regionalgeschichte in Heinsberg. Es erhielt seinen Namen nach der über vier Generationen wirkenden Künstlerfamilie Begas, deren Stammvater Carl Joseph Begas 1794 in Heinsberg geboren wurde.An das Museum angegliedert ist außerdem ein von der Lebenshilfe geführtes Café, in dem gelegentlich unter dem Motto „Kultur ohne Barrieren“ auch Kunst ausgestellt wird. In direkter Nähe befinden sich außerdem die Heinsberger Propsteikirche St. Gangolf sowie die Burg Heinsberg.",
