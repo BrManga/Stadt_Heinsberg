@@ -9,6 +9,15 @@
       //transform: rotate(-35deg) translate(0, 2rem);
     }
   }
+  @media screen and (max-width: 800px) {
+    .historie,
+    .stadtplan {
+      margin-top: 40px;
+      background-color: #e91e63;
+      margin: 0 -15px;
+    }
+  }
+
   .swing {
     animation: swing ease-in-out 1s infinite alternate;
     transform-origin: center -20px;

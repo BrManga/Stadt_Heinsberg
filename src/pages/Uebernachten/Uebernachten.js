@@ -7,7 +7,7 @@ import Footer from "../../components/Footer/Footer";
 function Uebernachten() {
   return (
     <>
-      <header className="roomsHero1">
+      <header className="uebernacht">
         <Banner
           title="Übernachten"
           subtitle="Wenn der Mensch zur Ruhe gekommen ist, dann wirkt er. Francesco Petrarca"

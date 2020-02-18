@@ -2,7 +2,7 @@ import React from "react";
 
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import HomePageContainer from "./components/HomePageContainer/HomePageContainer";
+import HomePageContainer from "./pages/HomePageContainer/HomePageContainer";
 import { Switch, Route } from "react-router-dom";
 import EssenUndTrinken from "./pages/EssenUndTrinken/EssenUndTrinken";
 import FreizeitUndErholung from "./pages/FreizeitUndErholung/FreizeitUndErholung";
@@ -11,7 +11,7 @@ import Historie from "./pages/Historie/Historie";
 import Stadtplan from "./pages/Stadtplan/Stadtplan";
 import Uebernachten from "./pages/Uebernachten/Uebernachten";
 import Veranstallungen from "./pages/Veranstallungen/Veranstallungen";
-
+import Fehler from "./pages/404/404";
 function App() {
   return (
     <>
@@ -43,6 +43,7 @@ function App() {
         <Route exact path="/veranstallungen/:slug" component={Details}></Route>
         <Route exact path="/historie" component={Historie} />
         <Route exact path="/stadtplan" component={Stadtplan} />
+        <Route component={Fehler}></Route>
       </Switch>
     </>
   );

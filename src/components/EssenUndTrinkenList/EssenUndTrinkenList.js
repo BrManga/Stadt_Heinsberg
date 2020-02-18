@@ -12,8 +12,8 @@ export default function EssenUndTrinkenList({sorted}) {
   }
 
   return (
-    <section className="restaurantslist">
-      <div className="restaurantslist-center">
+    <section className="essentrinkenlist">
+      <div className="essentrinkenlist-center">
         {sorted.essenundtrinken.map(item => {
           return (
             <Card

@@ -6,7 +6,7 @@ import {
   MDBNavbarToggler,
   MDBCollapse,
   MDBNavItem,
-  MDBNavLink,
+  MDBNavLink
 } from "mdbreact";
 import "./navbar.styles.scss";
 import logo from "../../assets/heinsberg_logo.jpg";
@@ -27,16 +27,17 @@ function Navbar() {
           </MDBNavbarBrand>
           <MDBNavbarToggler onClick={onClick} />
           <MDBCollapse isOpen={state.collapse} navbar>
-            <MDBNavbarNav right >
-              <MDBNavItem >
-                <MDBNavLink className="navbarLink historie" to="historie">Historie</MDBNavLink>
+            <MDBNavbarNav right>
+              <MDBNavItem>
+                <MDBNavLink className="navbarLink historie" to="historie">
+                  Historie
+                </MDBNavLink>
               </MDBNavItem>
 
               <MDBNavItem>
-                <MDBNavLink className="navbarLink stadtplan" to="stadtplan">Stadtplan</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink className="navbarLink datenschutz"to="datenschutz">Datenschutz</MDBNavLink>
+                <MDBNavLink className="navbarLink stadtplan" to="stadtplan">
+                  Stadtplan
+                </MDBNavLink>
               </MDBNavItem>
             </MDBNavbarNav>
           </MDBCollapse>

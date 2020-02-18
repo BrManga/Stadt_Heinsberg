@@ -7,7 +7,7 @@ import Footer from "../../components/Footer/Footer";
 function FreizeitUndErholung() {
   return (
     <>
-      <header className="roomsHero">
+      <header className="freizeiterholung">
         <Banner
           title="Freizeit&Erholung"
           subtitle="Nichts bringt uns auf unserem Weg besser voran als eine Pause."

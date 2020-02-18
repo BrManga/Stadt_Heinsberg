@@ -12,8 +12,8 @@ export default function VeranstallungenList({ sorted }) {
   }
 
   return (
-    <section className="restaurantslist">
-      <div className="restaurantslist-center">
+    <section className="veranstaltunglist">
+      <div className="veranstaltunglist-center">
         {sorted.veranstaltungen.map(item => {
           return (
             <Card key={item.id} value={item} section={"veranstallungen"} />

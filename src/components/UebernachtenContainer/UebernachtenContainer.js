@@ -5,10 +5,8 @@ import { HeinsbergContext } from "../../context";
 
 function UebernachtenContainer() {
   const context = useContext(HeinsbergContext);
-  //console.log("data yazdirildi", context);
 
   const { loading, sorted } = context;
-  //console.log("yazdi", sorted);
 
   if (loading) {
     return <Loading />;

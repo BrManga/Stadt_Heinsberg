@@ -5,10 +5,10 @@
   padding: 1rem;
   letter-spacing: var(--mainSpacing);
 }
-.restaurantslist {
+.essentrinkenlist {
   padding: 1rem 0;
 }
-.restaurantslist-center {
+.essentrinkenlist-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -18,12 +18,12 @@
 }
 
 @media screen and (min-width: 776px) {
-  .restaurantslist-center {
+  .essentrinkenlist-center {
     width: 90vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .restaurantslist-center {
+  .essentrinkenlist-center {
     width: 95vw;
     max-width: 1170px;
   }

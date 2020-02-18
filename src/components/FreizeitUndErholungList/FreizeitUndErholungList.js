@@ -13,8 +13,8 @@ export default function FreizeitUndErholungList({ sorted }) {
   }
 
   return (
-    <section className="restaurantslist">
-      <div className="restaurantslist-center">
+    <section className="freizeitlist">
+      <div className="freizeitlist-center">
         {sorted.freizeitunderholung.map(item => {
           return (
             <Card key={item.id} value={item} section={"freizeitunderholung"} />
