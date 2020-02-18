@@ -29,13 +29,13 @@ function Navbar() {
           <MDBCollapse isOpen={state.collapse} navbar>
             <MDBNavbarNav right>
               <MDBNavItem>
-                <MDBNavLink className="navbarLink historie" to="historie">
+                <MDBNavLink className="navbarLink historie" to="/historie">
                   Historie
                 </MDBNavLink>
               </MDBNavItem>
 
               <MDBNavItem>
-                <MDBNavLink className="navbarLink stadtplan" to="stadtplan">
+                <MDBNavLink className="navbarLink stadtplan" to="/stadtplan">
                   Stadtplan
                 </MDBNavLink>
               </MDBNavItem>

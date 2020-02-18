@@ -10,6 +10,9 @@
 }
 .banner h1 {
   font-size: 2.5rem;
+  @media (max-width: 800px) {
+    font-size: 1.5rem;
+  }
 }
 .banner div {
   width: 10rem;
@@ -20,14 +23,15 @@
 .banner p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 576px) {
   .banner {
     padding: 2rem 3rem;
   }
-  .banner h1 {
-    font-size: 3rem;
-  }
+
 }
 @media screen and (min-width: 992px) {
   .banner {

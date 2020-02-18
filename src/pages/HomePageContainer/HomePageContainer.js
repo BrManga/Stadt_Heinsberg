@@ -10,16 +10,16 @@ function HomePageContainer() {
       </div>
       <div className="row facilities">
         <Link to="/freizeitunderholung" className="col-12 col-lg-3 freizeit">
-          <p>Freizeit&Erholung</p>{" "}
+          Freizeit&Erholung
         </Link>
         <Link to="/essenundtrinken" className="col-12 col-lg-3 essen">
-          <p> Essen&Trinken</p>
+          Essen&Trinken
         </Link>
         <Link to="/uebernachten" className="col-12 col-lg-3 nacht">
-          <p> Übernachten</p>
+          Übernachten
         </Link>
         <Link to="/veranstallungen" className="col-12 col-lg-3 sport">
-          <p> Veranstaltungen</p>
+         Veranstaltungen
         </Link>
       </div>
     </div>

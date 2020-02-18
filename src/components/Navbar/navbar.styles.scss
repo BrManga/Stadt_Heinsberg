@@ -4,12 +4,14 @@
   .logoImageContainer {
     padding-left: 6rem;
     transform: translate(0, 2rem);
+    @media (max-width:768px){display: none;}
     .logoImage {
       width: 6rem;
       //transform: rotate(-35deg) translate(0, 2rem);
     }
   }
-  @media screen and (max-width: 800px) {
+  
+  @media screen and (max-width: 767px) {
     .historie,
     .stadtplan {
       margin-top: 40px;

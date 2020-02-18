@@ -132,8 +132,9 @@ class HeinsbergContextProvider extends React.Component {
     await veranstaltungen.map(item => {
       var d = new Date(item.startdate).getTime();
       item.startdate = d;
-      orderedVeranstallungen.push(item);
-    });
+    orderedVeranstallungen.push(item);
+    return orderedVeranstallungen  
+  });
     if (value === "aufsteigend") {
       orderedVeranstallungen = await orderedVeranstallungen.sort(
         (a, b) => parseFloat(a.startdate) - parseFloat(b.startdate)
@@ -150,7 +151,7 @@ class HeinsbergContextProvider extends React.Component {
       orderedVeranstallungen = await orderedVeranstallungen.sort(
         (a, b) => parseFloat(b.startdate) - parseFloat(a.startdate)
       );
-      var sortedAll = {
+      sortedAll = {
         ...this.state.sorted,
         veranstaltungen: orderedVeranstallungen
       };

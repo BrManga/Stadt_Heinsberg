@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import Title from "../Title/Title";
 import { HeinsbergContext } from "../../context";
 import "./essenundtrinkenfilter.styles.scss";
 
