@@ -68,7 +68,6 @@ const Details = props => {
   let selectedOne = data.sorted[section].filter(item => {
     return item.slug === state.slug;
   })[0];
-  console.log(selectedOne);
   const {
     name,
     details,

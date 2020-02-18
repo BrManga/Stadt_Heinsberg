@@ -2,7 +2,6 @@ import React from "react";
 import Card from "../Card/Card";
 import "./veranstallungenlist.styles.scss";
 export default function VeranstallungenList({ sorted }) {
-  console.log(" freizeit list component props:", sorted);
 
   if (sorted.veranstaltungen.length === 0) {
     return (

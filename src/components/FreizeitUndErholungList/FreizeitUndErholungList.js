@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../Card/Card";
 import "./freizetunderholung.styles.scss";
 export default function FreizeitUndErholungList({ sorted }) {
-  console.log(" freizeit list component props:", sorted);
+//  console.log(" freizeit list component props:", sorted);
 
   if (sorted.freizeitunderholung.length === 0) {
     return (

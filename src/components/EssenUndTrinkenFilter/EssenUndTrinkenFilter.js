@@ -4,16 +4,13 @@ import { HeinsbergContext } from "../../context";
 import "./essenundtrinkenfilter.styles.scss";
 
 const getUnique = (items, type) => {
-  //console.log("items geldi",items);
   return [...new Set(items.map(item => item[type]))];
 };
 export default function EssenUndTrinkenFilter() {
   const context = useContext(HeinsbergContext);
   const { essenundtrinken, handleChange, type, preise } = context;
-  console.log("context", essenundtrinken);
   let types = getUnique(essenundtrinken, "type");
   types = ["alle", ...types];
-  // console.log(types);
 
   types = types.map((item, index) => {
     return (
@@ -30,7 +27,6 @@ export default function EssenUndTrinkenFilter() {
     return a.length - b.length;
   });
   preises = preises.map((item, index) => {
-    //console.log("preise", item);
     return (
       <option value={item} key={index}>
         {item}

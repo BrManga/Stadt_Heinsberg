@@ -2,7 +2,6 @@ import React from "react";
 import Card from "../Card/Card";
 import "./uebernachtenList.styles.scss";
 export default function UebernachtenList({ sorted }) {
-  console.log(" freizeit list component props:", sorted);
 
   if (sorted.uebernachten.length === 0) {
     return (

@@ -414,7 +414,7 @@ export const data = {
       otherimages: [glanzstoff2, glanzstoff3, glanzstoff4]
     },
     {
-      id: 20,
+      id: 21,
       name: "Hensens Residenz",
       googlebewertungen: 4.8,
       type: "hotel",
@@ -430,10 +430,10 @@ export const data = {
   ],
   veranstallungen: [
     {
-      id: 21,
+      id: 22,
       name: "Weihnachts- und Wintermarkt",
       type: "event",
-      startdate: "23.11.2019",
+      startdate: "2019/11/23",
       dates: "25. November 2019 bis 05. Januar 2020 ",
       slug: "wintermarkt",
       details:
@@ -445,10 +445,10 @@ export const data = {
       otherimages: [wintermarkt2, wintermarkt3, wintermarkt4]
     },
     {
-      id: 22,
+      id: 23,
       name: "Ausstellung 'Familientreffen'",
       type: "event",
-      startdate: "09.02.2020",
+      startdate: "2020/02/09",
       dates: "09. Februar 2020",
       slug: "ausstellungbegashaus",
       details:
@@ -464,10 +464,10 @@ export const data = {
       ]
     },
     {
-      id: 23,
+      id: 24,
       name: "Der Dennis - Ich seh voll reich aus!",
       type: "event",
-      startdate: "09.05.2020",
+      startdate: "2020/05/09",
       dates: "09. Mai 2020",
       slug: "derdennis",
       details:
@@ -479,10 +479,10 @@ export const data = {
       otherimages: [dennis2, dennis3, dennis4]
     },
     {
-      id: 24,
+      id: 25,
       name: "Ingrid Kühne - Okay, mein Fehler!",
       type: "event",
-      startdate: "28.11.2020",
+      startdate: "2020/11/28",
       dates: "28. November 2020",
       slug: "okaymeinfehler",
       details:
@@ -494,10 +494,10 @@ export const data = {
       otherimages: [ingridkuhne2, ingridkuhne3, ingridkuhne4]
     },
     {
-      id: 25,
+      id: 26,
       name: "Steffi Neu & Hastenraths Will",
       type: "event",
-      startdate: "25.03.2020",
+      startdate: "2020/03/25",
       dates: "25. März 2020",
       slug: "okaymeinfehler",
       details: "Steffi Neu interviewt Hastenraths Will und umgekehrt. 2000",

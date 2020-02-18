@@ -2,15 +2,9 @@ import React, { useContext } from "react";
 import { HeinsbergContext } from "../../context";
 import "./veranstallungenfilter.styles.scss";
 
-const getUnique = (items, type) => {
-  //console.log("items geldi",items);
-  return [...new Set(items.map(item => item[type]))];
-};
-
 export default function VeranstallungenFilter() {
   const context = useContext(HeinsbergContext);
-  const { veranstallungen, handleChange, type } = context;
-  var date = veranstallungen.startdate;
+  const { handleChange } = context;
 
   return (
     <section className="filter-container">
@@ -23,6 +17,7 @@ export default function VeranstallungenFilter() {
             className="form-control"
             onChange={handleChange}
           >
+            <option value="-">-</option>
             <option value="aufsteigend">Aufsteigend</option>
             <option value="absteigend">Absteigend</option>
           </select>
