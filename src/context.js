@@ -55,17 +55,48 @@ class HeinsbergContextProvider extends React.Component {
     };
     this.setState({ ...this.state, sorted: sortedAll });
   };
-  filterEssenUndTrinkenType = () => {
-    const { type, essenundtrinken } = this.state;
+  filterEssenUndTrinkenType = value => {
+    console.log("filtertrinkentype");
 
-    var newessenundtrinken = essenundtrinken.filter(item => item.type === type);
+    const { type, preise } = this.state;
+    const { essenundtrinken } = this.state.sorted;
+    if (
+      value === "deutsche" ||
+      value === "kroatisch" ||
+      value === "griechisch" ||
+      value === "amerikanische" ||
+      value === "chinesische" ||
+      value === "italienisch"
+    ) {
+      var newessenundtrinken = essenundtrinken.filter(
+        item => item.type === type
+      );
 
-    var sortedAll = {
-      ...this.state.sorted,
-      essenundtrinken: newessenundtrinken
-    };
+      var sortedAll = {
+        ...this.state.sorted,
+        essenundtrinken: newessenundtrinken
+      };
 
-    this.setState({ ...this.state, sorted: sortedAll });
+      this.setState({ ...this.state, sorted: sortedAll });
+    } else if (
+      value === "$" ||
+      value === "$$" ||
+      value === "$$$" ||
+      value === "$$$$" ||
+      value === "$$$$$"
+    ) {
+      console.log("inside preis filter");
+
+      newessenundtrinken = essenundtrinken.filter(
+        item => item.preise === preise
+      );
+
+      sortedAll = {
+        ...this.state.sorted,
+        essenundtrinken: newessenundtrinken
+      };
+      this.setState({ ...this.state, sorted: sortedAll });
+    }
   };
   filterFreizeitUndErholung = () => {
     const { type, freizeitunderholung } = this.state;
@@ -90,6 +121,7 @@ class HeinsbergContextProvider extends React.Component {
     const name = e.target.name;
     //if there will be a new type of something you should enter it here inside conditions
     await this.setState({ ...this.state, [name]: value });
+    console.log("value", value);
 
     if (value === "sehenswertes" || value === "sport") {
       await this.filterFreizeitUndErholung();
@@ -99,29 +131,27 @@ class HeinsbergContextProvider extends React.Component {
       value === "griechisch" ||
       value === "amerikanische" ||
       value === "chinesische" ||
-      value === "italienisch"
-    ) {
-      await this.filterEssenUndTrinkenType();
-    } else if (value === "aufsteigend" || value === "absteigend") {
-      await this.filterVeranstallungen(value);
-    } else if (
+      value === "italienisch" ||
       value === "$" ||
       value === "$$" ||
       value === "$$$" ||
       value === "$$$$" ||
       value === "$$$$$"
     ) {
-      await this.filterEssenUndTrinkenPreise();
+      await this.filterEssenUndTrinkenType(value);
+      //await this.filterEssenUndTrinkenPreise();
     } else if (value === "alle" || value === "-") {
+      const { essenundtrinken } = this.state;
+      console.log("hereee");
+
+      let sortedAll = {
+        ...this.state.sorted,
+        essenundtrinken: essenundtrinken
+      };
+      this.setState({ ...this.state, sorted: sortedAll });
+    } else if (value === "aufsteigend" || value === "absteigend") {
+      await this.filterVeranstallungen(value);
       this.componentDidMount();
-      /*  var sortedAll = await {
-        freizeitunderholung: [...this.state.freizeitunderholung],
-        essenundtrinken: [...this.state.essenundtrinken],
-        uebernachten: [...this.state.uebernachten],
-        veranstaltungen: [...this.state.veranstaltungen]
-      } */
-      /* 
-      this.setState({ ...this.state, sorted: sortedAll }); */
     }
   };
   filterVeranstallungen = async value => {
@@ -132,9 +162,9 @@ class HeinsbergContextProvider extends React.Component {
     await veranstaltungen.map(item => {
       var d = new Date(item.startdate).getTime();
       item.startdate = d;
-    orderedVeranstallungen.push(item);
-    return orderedVeranstallungen  
-  });
+      orderedVeranstallungen.push(item);
+      return orderedVeranstallungen;
+    });
     if (value === "aufsteigend") {
       orderedVeranstallungen = await orderedVeranstallungen.sort(
         (a, b) => parseFloat(a.startdate) - parseFloat(b.startdate)

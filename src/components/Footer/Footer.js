@@ -50,6 +50,8 @@ const Footer = () => {
                   href="https://www.facebook.com/groups/heinsberg.meine.stadt/"
                   className="icoFacebook"
                   title="Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="fa fa-facebook"></i>
                 </a>
@@ -59,6 +61,8 @@ const Footer = () => {
                   href="https://www.youtube.com/playlist?list=PL3tfK1pRFF7YhBN1OqBTsxjfvJteItesr"
                   className="icoYoutube"
                   title="Youtube"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="fa fa-youtube"></i>
                 </a>

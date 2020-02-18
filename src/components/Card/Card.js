@@ -8,10 +8,13 @@ function Card({ value, section }) {
     <article className="card">
       <div className="img-container">
         <img src={image} alt={name} />
-        <div className="preise">
-          <h6>{preise}</h6>
-          {googlebewertungen ? <p>Google: {googlebewertungen} </p> : null}
-        </div>
+        {preise || googlebewertungen ? (
+          <div className="preise">
+            {preise ? <h6>{preise}</h6> : null}
+            {googlebewertungen ? <p>Google: {googlebewertungen} </p> : null}
+          </div>
+        ) : null}
+
         <Link to={`${section}/${slug}`} className="btn card-link">
           Entdecken
         </Link>
