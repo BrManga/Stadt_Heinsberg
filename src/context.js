@@ -18,7 +18,9 @@ class HeinsbergContextProvider extends React.Component {
       freizeitunderholung: [...this.state.freizeitunderholung],
       essenundtrinken: [...this.state.essenundtrinken],
       uebernachten: [...this.state.uebernachten],
-      veranstaltungen: [...this.state.veranstallungen]
+      veranstaltungen: [...this.state.veranstallungen],
+      tempType: "",
+      tempPreise: ""
     };
     this.setState(
       { ...this.state, sorted: sortedAll, loading: false },
@@ -56,47 +58,54 @@ class HeinsbergContextProvider extends React.Component {
     this.setState({ ...this.state, sorted: sortedAll });
   };
   filterEssenUndTrinkenType = value => {
-    console.log("filtertrinkentype");
-
     const { type, preise } = this.state;
-    const { essenundtrinken } = this.state.sorted;
-    if (
-      value === "deutsche" ||
-      value === "kroatisch" ||
-      value === "griechisch" ||
-      value === "amerikanische" ||
-      value === "chinesische" ||
-      value === "italienisch"
-    ) {
-      var newessenundtrinken = essenundtrinken.filter(
-        item => item.type === type
-      );
-
+    const { essenundtrinken } = this.state;
+    var tempessentrinken = essenundtrinken;
+    if (type !== this.state.sorted.tempType) {
+      tempessentrinken = essenundtrinken.filter(item => item.type === type);
       var sortedAll = {
         ...this.state.sorted,
-        essenundtrinken: newessenundtrinken
+        essenundtrinken: tempessentrinken,
+        tempType: type
       };
-
-      this.setState({ ...this.state, sorted: sortedAll });
-    } else if (
-      value === "$" ||
-      value === "$$" ||
-      value === "$$$" ||
-      value === "$$$$" ||
-      value === "$$$$$"
+    }
+    if (
+      type === "deutsche" ||
+      type === "kroatisch" ||
+      type === "griechisch" ||
+      type === "amerikanische" ||
+      type === "chinesische" ||
+      type === "italienisch"
+    ) {
+      tempessentrinken = tempessentrinken.filter(item => item.type === type);
+      var sortedAll = {
+        ...this.state.sorted,
+        essenundtrinken: tempessentrinken,
+        tempType: type
+      };
+    }
+    if (
+      preise === "$" ||
+      preise === "$$" ||
+      preise === "$$$" ||
+      preise === "$$$$" ||
+      preise === "$$$$$"
     ) {
       console.log("inside preis filter");
-
-      newessenundtrinken = essenundtrinken.filter(
+      console.log(
+        "from preise filter part inside filteressentrinkentype",
+        essenundtrinken
+      );
+      tempessentrinken = tempessentrinken.filter(
         item => item.preise === preise
       );
 
       sortedAll = {
         ...this.state.sorted,
-        essenundtrinken: newessenundtrinken
+        essenundtrinken: tempessentrinken
       };
-      this.setState({ ...this.state, sorted: sortedAll });
     }
+    this.setState({ ...this.state, sorted: sortedAll });
   };
   filterFreizeitUndErholung = () => {
     const { type, freizeitunderholung } = this.state;
@@ -120,8 +129,9 @@ class HeinsbergContextProvider extends React.Component {
     const value = target.value;
     const name = e.target.name;
     //if there will be a new type of something you should enter it here inside conditions
-    await this.setState({ ...this.state, [name]: value });
-    console.log("value", value);
+    await this.setState({ ...this.state, [name]: value }, () => {
+      console.log("inside handle change", this.state);
+    });
 
     if (value === "sehenswertes" || value === "sport") {
       await this.filterFreizeitUndErholung();
@@ -149,9 +159,10 @@ class HeinsbergContextProvider extends React.Component {
         essenundtrinken: essenundtrinken
       };
       this.setState({ ...this.state, sorted: sortedAll });
+      this.forceUpdate();
     } else if (value === "aufsteigend" || value === "absteigend") {
       await this.filterVeranstallungen(value);
-      this.componentDidMount();
+      this.forceUpdate();
     }
   };
   filterVeranstallungen = async value => {
@@ -169,10 +180,11 @@ class HeinsbergContextProvider extends React.Component {
       orderedVeranstallungen = await orderedVeranstallungen.sort(
         (a, b) => parseFloat(a.startdate) - parseFloat(b.startdate)
       );
-      var sortedAll = {
+      let sortedAll = {
         ...this.state.sorted,
         veranstaltungen: orderedVeranstallungen
       };
+      console.log("auf", orderedVeranstallungen);
 
       this.setState({ ...this.state, sorted: sortedAll }, () =>
         console.log("from filterVeranstaltungen aufsteigend: ", this.state)
@@ -181,7 +193,9 @@ class HeinsbergContextProvider extends React.Component {
       orderedVeranstallungen = await orderedVeranstallungen.sort(
         (a, b) => parseFloat(b.startdate) - parseFloat(a.startdate)
       );
-      sortedAll = {
+      console.log("ab", orderedVeranstallungen);
+
+      let sortedAll = {
         ...this.state.sorted,
         veranstaltungen: orderedVeranstallungen
       };

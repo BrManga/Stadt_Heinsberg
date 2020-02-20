@@ -36,7 +36,6 @@ export default function EssenUndTrinkenFilter() {
   return (
     <section className="filter-container">
       <form className="filter-form">
-        {}
         <div className="form-group">
           <label htmlFor="type">Restauranttyp</label>
           <select
@@ -61,64 +60,6 @@ export default function EssenUndTrinkenFilter() {
             {preises}
           </select>
         </div>
-        {/*  <div className="form-group">
-          <label htmlFor="capacity">Guests</label>
-          <select
-            name="capacity"
-            id="capacity"
-            value={capacity}
-            className="form-control"
-            onChange={handleChange}
-          >
-            {people}
-          </select>
-        </div>
-       
-        <div className="form-group">
-          <label htmlFor="size">room size</label>
-          <div className="size-inputs">
-            <input
-              type="number"
-              name="minSize"
-              value={minSize}
-              id="size"
-              onChange={handleChange}
-              className="size-input"
-            />
-            <input
-              type="number"
-              name="maxSize"
-              value={maxSize}
-              id="size"
-              onChange={handleChange}
-              className="size-input"
-            />
-          </div>
-        </div>
-        <div className="form-group">
-          <div className="single-extra">
-            <input
-              type="checkbox"
-              name="breakfast"
-              id="breakfast"
-              checked={breakfast}
-              onChange={handleChange}
-            />
-            <label htmlFor="pets">breakfast</label>
-          </div>
-        </div>
-        <div className="form-group">
-          <div className="single-extra">
-            <input
-              type="checkbox"
-              name="pets"
-              id="pets"
-              checked={pets}
-              onChange={handleChange}
-            />
-            <label htmlFor="pets">pets</label>
-          </div>
-        </div> */}
       </form>
     </section>
   );
