@@ -10,7 +10,7 @@ import Details from "./pages/Details/Details";
 import Historie from "./pages/Historie/Historie";
 import Stadtplan from "./pages/Stadtplan/Stadtplan";
 import Uebernachten from "./pages/Uebernachten/Uebernachten";
-import Veranstallungen from "./pages/Veranstallungen/Veranstallungen";
+import Veranstallungen from "./pages/Veranstaltungen/Veranstaltungen";
 import Fehler from "./pages/404/404";
 function App() {
   return (
@@ -40,7 +40,7 @@ function App() {
         <Route exact path="/veranstallungen">
           <Veranstallungen />
         </Route>
-        <Route exact path="/veranstallungen/:slug" component={Details}></Route>
+        <Route exact path="/veranstaltungen/:slug" component={Details}></Route>
         <Route exact path="/historie" component={Historie} />
         <Route exact path="/stadtplan" component={Stadtplan} />
         <Route component={Fehler}></Route>

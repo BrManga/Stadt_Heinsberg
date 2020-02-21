@@ -3,8 +3,11 @@
   top: 7rem;
   background-color: gray;
   height: calc(100vh - 7rem);
+  padding: 0!important;
   .rowTop {
     height: 70%;
+    padding: 0!important;
+    margin: 0;
   }
   .backgroundImg {
     background-image: url("http://bundesfest2017.schuetzenbruderschaft-hs.de/wp-content/uploads/2017/07/P1180363.jpg");
@@ -14,6 +17,7 @@
   .facilities {
     height: 30%;
     font-size: 2rem;
+    margin: 0;
     @media (max-width: 900px) {
       font-size: 1.3rem;
     }

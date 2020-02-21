@@ -7,6 +7,8 @@ import ImageCarousel from "../../components/Carousel/carousel";
 import mapboxgl from "mapbox-gl";
 import Footer from "../../components/Footer/Footer";
 const Details = props => {
+  console.log("props from details", props);
+
   const initialState = {
     lng: 6.09708,
     lat: 51.06542,

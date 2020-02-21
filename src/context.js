@@ -78,7 +78,7 @@ class HeinsbergContextProvider extends React.Component {
       type === "italienisch"
     ) {
       tempessentrinken = tempessentrinken.filter(item => item.type === type);
-      var sortedAll = {
+      sortedAll = {
         ...this.state.sorted,
         essenundtrinken: tempessentrinken,
         tempType: type

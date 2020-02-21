@@ -1,7 +1,9 @@
 import React from "react";
 import Card from "../Card/Card";
-import "./veranstallungenlist.styles.scss";
+import "./veranstaltungenlist.styles.scss";
 export default function VeranstallungenList({ sorted }) {
+  console.log('List part sorted', sorted);
+  
 
   if (sorted.veranstaltungen.length === 0) {
     return (
@@ -16,7 +18,7 @@ export default function VeranstallungenList({ sorted }) {
       <div className="veranstaltunglist-center">
         {sorted.veranstaltungen.map(item => {
           return (
-            <Card key={item.id} value={item} section={"veranstallungen"} />
+            <Card key={item.id} value={item} section={"veranstaltungen"} />
           );
         })}
       </div>

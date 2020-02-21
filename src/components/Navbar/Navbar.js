@@ -25,6 +25,9 @@ function Navbar() {
               <img src={logo} className="mx-auto logoImage" alt="Heinsberg" />
             </div>
           </MDBNavbarBrand>
+          <MDBNavbarBrand href="/">
+          <strong className="white-text heinsbergText">Heinsberg</strong>
+        </MDBNavbarBrand>
           <MDBNavbarToggler onClick={onClick} />
           <MDBCollapse isOpen={state.collapse} navbar>
             <MDBNavbarNav right>

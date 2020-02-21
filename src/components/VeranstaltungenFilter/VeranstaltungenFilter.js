@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { HeinsbergContext } from "../../context";
-import "./veranstallungenfilter.styles.scss";
+import "./veranstaltungenfilter.styles.scss";
 
 export default function VeranstallungenFilter() {
   const context = useContext(HeinsbergContext);

@@ -1,8 +1,8 @@
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import { Link } from "react-router-dom";
-import "./veranstallungen.styles.scss";
-import VeranstallungenContainer from "../../components/VeranstallungenContainer/VeranstallungenContainer";
+import "./veranstaltungen.styles.scss";
+import VeranstallungenContainer from "../../components/VeranstaltungenContainer/VeranstaltungenContainer";
 import Footer from "../../components/Footer/Footer";
 function Veranstallungen() {
   return (
