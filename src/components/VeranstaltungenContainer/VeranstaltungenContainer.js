@@ -7,7 +7,6 @@ import { HeinsbergContext } from "../../context";
 function VeranstallungenContainer() {
   const context = useContext(HeinsbergContext);
   const { loading, sorted } = context;
-  console.log("VeranstallungenContainer", sorted);
 
   if (loading) {
     return <Loading />;

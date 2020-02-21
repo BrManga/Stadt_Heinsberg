@@ -364,7 +364,7 @@ export const data = {
       type: "hotel",
       slug: "hotelcorsten",
       details:
-        "Hotel Corsten has been owned by the Corsten Family since 1921 and is currently led in the 4th generation. We are located in the city center of Heinsberg and have good connections to the freeway, the local bus station and the future train station just a few meters from the hotel.",
+        "Gemütlichkeit und Flair: Fühlen Sie sich bei uns wie zu Hause! Erleben Sie im Hotel und Steakrestaurant Corsten in Heinsberg Herzlichkeit und Gastfreundschaft! Wir heißen Sie gerne in unserem 3-Sterne-Hotel willkommen. Seit 1921 und inzwischen in der vierten Generation bieten wir in unserem Hotel im Herzen von Heinsberg ein Zuhause auf Reisen. Erholen Sie sich in unseren komfortablen und einladenden Zimmern und lassen Sie die Anstrengungen des Tages hinter sich. ",
       website: "https://www.hotel-corsten.de/",
       anschrift: "Hochstraße 160, 52525 Heinsberg",
       phone: "02452 1860",

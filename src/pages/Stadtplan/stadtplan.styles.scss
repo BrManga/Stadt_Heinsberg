@@ -6,6 +6,7 @@ h1 {
 
 .heading-frame {
   display: grid;
+  width: 100%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
   grid-template-columns: max-content auto;
   grid-template-rows: auto max-content;
@@ -16,6 +17,12 @@ h1 {
   width: 400px;
   height: 500px;
   padding: 2rem;
+  margin-top: 8rem;
+  @media (max-width: 900px) {
+    min-width: 350px;
+    height: 400px;
+    margin-top: 7rem;
+  }
   &:before,
   &:after {
     content: "";
@@ -33,18 +40,7 @@ h1 {
     grid-row: 1 / span 2;
     border-left: none;
   }
-  &:hover {
-    .warning {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      background-color: white;
-      height: 100%;
-      width: 100%;
-      transition: ease-in 1s;
-    }
-  }
+ 
   h2 {
     margin: 1rem 1rem -0.5rem 0;
     font-family: "Pragati Narrow", sans-serif;
@@ -52,7 +48,35 @@ h1 {
     max-width: 100%;
   }
 }
+.stadtplanTitle {
+  font-size: 1.9rem;
+  font-family: "Merienda One", cursive;
+  @media (max-width: 900px) {
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+}
+.stadtplanExplain {
+  margin-top: 30px 0;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  @media (max-width: 900px) {
+    font-size: 1rem;
+  }
+}
+.stadtplanText {
+  margin-top: 7rem;
+  @media (max-width: 900px) {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+}
 .mapContainer {
-  width: 800px;
-  height: 600px;
+  width: 600px;
+  height: 400px;
+  @media (max-width: 900px) {
+    width: 350px;
+    height: 300px;
+  }
 }

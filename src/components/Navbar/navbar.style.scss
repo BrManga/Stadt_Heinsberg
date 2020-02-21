@@ -1,0 +1,95 @@
+.navbar {
+  padding: 0 !important;
+  .navbar-toggler {
+    color: white !important;
+  }
+}
+.nav-link {
+  @media (min-width: 900px) {
+    font-size: 1.7rem;
+  }
+}
+.navbar-brand {
+  padding: 10px 0 0 16px;
+  font-family: "Merienda One", cursive;
+}
+.newnavbar {
+  background-color: #e91e63;
+  padding: 0;
+  .navbar-brand {
+    color: white !important;
+    font-size: 1.4rem;
+  }
+}
+#basic-navbar-nav {
+  background-color: #e91e63;
+  width: 100%;
+}
+.navbar-collapse {
+  margin: 0;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.heartHeinsberg {
+  display: none !important;
+
+  @media (max-width: 900px) {
+    display: block !important;
+  }
+}
+.navbar {
+  background-color: #e91e63;
+  height: 7rem;
+  .logoImageContainer {
+    padding-left: 6rem;
+    transform: translate(0, 2rem);
+    @media (max-width:768px){display: none;}
+    .logoImage {
+      width: 6rem;
+      //transform: rotate(-35deg) translate(0, 2rem);
+    }
+  }}
+.swing {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  float: left;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.swing img {
+  border: 5px solid #f8f8f8;
+  display: block;
+}
+.swing:after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #999;
+  top: -13px;
+  left: 39%;
+  z-index: 0;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(45deg);
+}
+/* nail */
+.swing:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: -18px;
+  left: 50%;
+  z-index: 5;
+  border-radius: 50% 50%;
+  background: #000;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}

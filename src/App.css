@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap");
 
-body,
+html,body,
 #root {
   margin: 0;
   padding: 0;

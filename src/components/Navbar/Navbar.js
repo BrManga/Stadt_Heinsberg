@@ -1,53 +1,41 @@
-import React, { useState } from "react";
-import {
-  MDBNavbar,
-  MDBNavbarBrand,
-  MDBNavbarNav,
-  MDBNavbarToggler,
-  MDBCollapse,
-  MDBNavItem,
-  MDBNavLink
-} from "mdbreact";
-import "./navbar.styles.scss";
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import "./navbar.style.scss";
 import logo from "../../assets/heinsberg_logo.jpg";
 
-function Navbar() {
-  const [state, setState] = useState({ collapse: false });
-  const onClick = e => {
-    setState({ ...state, collapse: !state.collapse });
-  };
+function NewNavbar() {
   return (
-    <div>
-      <header>
-        <MDBNavbar className="navbar" dark expand="md" scrolling fixed="top">
-          <MDBNavbarBrand href="/" className="logoImageContainer">
-            <div className="swing">
-              <img src={logo} className="mx-auto logoImage" alt="Heinsberg" />
-            </div>
-          </MDBNavbarBrand>
-          <MDBNavbarBrand href="/">
-          <strong className="white-text heinsbergText">Heinsberg</strong>
-        </MDBNavbarBrand>
-          <MDBNavbarToggler onClick={onClick} />
-          <MDBCollapse isOpen={state.collapse} navbar>
-            <MDBNavbarNav right>
-              <MDBNavItem>
-                <MDBNavLink className="navbarLink historie" to="/historie">
-                  Historie
-                </MDBNavLink>
-              </MDBNavItem>
-
-              <MDBNavItem>
-                <MDBNavLink className="navbarLink stadtplan" to="/stadtplan">
-                  Stadtplan
-                </MDBNavLink>
-              </MDBNavItem>
-            </MDBNavbarNav>
-          </MDBCollapse>
-        </MDBNavbar>
-      </header>
+    <div className="newnavbar">
+      <Navbar fixed="top" expand="lg">
+        <Navbar.Brand href="/" className="heartHeinsberg">
+          <i class="fa fa-heart"></i> <span> </span> Heinsberg
+        </Navbar.Brand>
+        <Navbar.Brand href="/" className="logoImageContainer">
+          <div className="swing">
+            <img src={logo} className="mx-auto logoImage" alt="Heinsberg" />
+          </div>
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          style={{
+            color: "white",
+            backgroundColor: "#FFBEC1",
+            margin: "10px"
+          }}
+        />
+        <Navbar.Collapse style={{ color: "white" }} id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link style={{ color: "white" }} href="/historie">
+              Historie
+            </Nav.Link>
+            <Nav.Link style={{ color: "white" }} href="/stadtplan">
+              Stadtplan
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   );
 }
 
-export default Navbar;
+export default NewNavbar;

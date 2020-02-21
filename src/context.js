@@ -61,12 +61,14 @@ class HeinsbergContextProvider extends React.Component {
     const { type, preise } = this.state;
     const { essenundtrinken } = this.state;
     var tempessentrinken = essenundtrinken;
-    if (type !== this.state.sorted.tempType) {
-      tempessentrinken = essenundtrinken.filter(item => item.type === type);
+
+    //console.log("typeee:", type, "preise", preise, "i am the state:", this.state);
+
+    if (type === "alle" || preise === "-") {
+      tempessentrinken = essenundtrinken;
       var sortedAll = {
         ...this.state.sorted,
-        essenundtrinken: tempessentrinken,
-        tempType: type
+        essenundtrinken: tempessentrinken
       };
     }
     if (
@@ -80,8 +82,7 @@ class HeinsbergContextProvider extends React.Component {
       tempessentrinken = tempessentrinken.filter(item => item.type === type);
       sortedAll = {
         ...this.state.sorted,
-        essenundtrinken: tempessentrinken,
-        tempType: type
+        essenundtrinken: tempessentrinken
       };
     }
     if (
@@ -91,11 +92,6 @@ class HeinsbergContextProvider extends React.Component {
       preise === "$$$$" ||
       preise === "$$$$$"
     ) {
-      console.log("inside preis filter");
-      console.log(
-        "from preise filter part inside filteressentrinkentype",
-        essenundtrinken
-      );
       tempessentrinken = tempessentrinken.filter(
         item => item.preise === preise
       );
@@ -128,12 +124,13 @@ class HeinsbergContextProvider extends React.Component {
     const target = e.target;
     const value = target.value;
     const name = e.target.name;
+    console.log("handle change ", value);
     //if there will be a new type of something you should enter it here inside conditions
-    await this.setState({ ...this.state, [name]: value }, () => {
-      console.log("inside handle change", this.state);
-    });
+    await this.setState({ ...this.state, [name]: value });
 
     if (value === "sehenswertes" || value === "sport") {
+      console.log("here", value);
+
       await this.filterFreizeitUndErholung();
     } else if (
       value === "deutsche" ||
@@ -151,13 +148,13 @@ class HeinsbergContextProvider extends React.Component {
       await this.filterEssenUndTrinkenType(value);
       //await this.filterEssenUndTrinkenPreise();
     } else if (value === "alle" || value === "-") {
-      const { essenundtrinken } = this.state;
-      console.log("hereee");
-
+      const { essenundtrinken, freizeitunderholung } = this.state;
       let sortedAll = {
         ...this.state.sorted,
-        essenundtrinken: essenundtrinken
+        essenundtrinken: essenundtrinken,
+        freizeitunderholung: freizeitunderholung
       };
+
       this.setState({ ...this.state, sorted: sortedAll });
       this.forceUpdate();
     } else if (value === "aufsteigend" || value === "absteigend") {

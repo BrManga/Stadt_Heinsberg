@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
 import HomePageContainer from "./pages/HomePageContainer/HomePageContainer";
 import { Switch, Route } from "react-router-dom";
 import EssenUndTrinken from "./pages/EssenUndTrinken/EssenUndTrinken";
@@ -12,6 +11,7 @@ import Stadtplan from "./pages/Stadtplan/Stadtplan";
 import Uebernachten from "./pages/Uebernachten/Uebernachten";
 import Veranstallungen from "./pages/Veranstaltungen/Veranstaltungen";
 import Fehler from "./pages/404/404";
+import Navbar from "../src/components/Navbar/Navbar";
 function App() {
   return (
     <>

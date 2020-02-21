@@ -2,7 +2,6 @@ import React from "react";
 import Card from "../Card/Card";
 import "./veranstaltungenlist.styles.scss";
 export default function VeranstallungenList({ sorted }) {
-  console.log('List part sorted', sorted);
   
 
   if (sorted.veranstaltungen.length === 0) {
