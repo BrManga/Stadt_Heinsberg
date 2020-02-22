@@ -19,7 +19,7 @@ function HomePageContainer() {
           Übernachten
         </Link>
         <Link to="/veranstallungen" className="col-12 col-lg-3 sport">
-         Veranstaltungen
+          Veranstaltungen
         </Link>
       </div>
     </div>
