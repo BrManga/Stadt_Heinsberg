@@ -53,7 +53,7 @@ const Details = props => {
         });
       });
     });
-  }, []);
+  });
 
   const [mapstate, setMapstate] = useState(initialState);
   const context = useContext(HeinsbergContext);
