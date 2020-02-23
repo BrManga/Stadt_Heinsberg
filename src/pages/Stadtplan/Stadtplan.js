@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import "./stadtplan.styles.scss";
 import mapboxgl from "mapbox-gl";
-import token from "../../key";
 import Footer from "../../components/Footer/Footer";
+import { token } from "../../key";
 const Stadtplan = () => {
   const mapContainer = useRef(null);
   useEffect(() => {
-    mapboxgl.accessToken = token.key.mapToken;
+    mapboxgl.accessToken = token;
     new mapboxgl.Map({
       container: mapContainer.current,
       style: "mapbox://styles/mapbox/streets-v11",

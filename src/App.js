@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./App.css";
 import HomePageContainer from "./pages/HomePageContainer/HomePageContainer";
 import { Switch, Route } from "react-router-dom";
@@ -12,6 +11,8 @@ import Uebernachten from "./pages/Uebernachten/Uebernachten";
 import Veranstallungen from "./pages/Veranstaltungen/Veranstaltungen";
 import Fehler from "./pages/404/404";
 import Navbar from "../src/components/Navbar/Navbar";
+
+
 function App() {
   return (
     <>

@@ -1,13 +1,13 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import here from "../../assets/images/icon.png";
-import token from "../../key";
 import "./details.styles.scss";
 import { HeinsbergContext } from "../../context";
 import ImageCarousel from "../../components/Carousel/carousel";
 import mapboxgl from "mapbox-gl";
 import Footer from "../../components/Footer/Footer";
+import {token} from "../../key";
 const Details = props => {
-  console.log("props from details", props);
+  console.log("props from details", token);
 
   const initialState = {
     lng: 6.09708,
@@ -16,7 +16,7 @@ const Details = props => {
   };
   const mapContainer = useRef(null);
   useEffect(() => {
-    mapboxgl.accessToken = token.key.mapToken;
+    mapboxgl.accessToken = token;
     const map = new mapboxgl.Map({
       container: mapContainer.current,
       style: "mapbox://styles/mapbox/streets-v11",
