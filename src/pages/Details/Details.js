@@ -5,7 +5,7 @@ import { HeinsbergContext } from "../../context";
 import ImageCarousel from "../../components/Carousel/carousel";
 import mapboxgl from "mapbox-gl";
 import Footer from "../../components/Footer/Footer";
-import {token} from "../../key";
+import { token } from "../../key";
 const Details = props => {
   console.log("props from details", token);
 

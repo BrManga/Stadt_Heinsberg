@@ -32,14 +32,9 @@ class HeinsbergContextProvider extends React.Component {
     try {
       //console.log("sorted restaurant bilgisi alindi",sortedRestaurants);
 
-      await this.setState(
-        {
-          ...data
-        },
-        () => {
-          console.log("data fetched from data file", this.state);
-        }
-      );
+      await this.setState({
+        ...data
+      });
     } catch (error) {
       console.log("error in getData function", error);
     }

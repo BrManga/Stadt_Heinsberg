@@ -18,7 +18,8 @@
   padding: 0;
   .navbar-brand {
     color: white !important;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    font-family: "Merienda One", cursive;
   }
 }
 #basic-navbar-nav {
@@ -29,6 +30,12 @@
   margin: 0;
   padding: 20px;
   font-size: 1.2rem;
+  .navbar-nav a {
+    text-decoration: none;
+    color: white !important;
+    padding-right: 10px;
+    font-size: 1.5rem;
+  }
 }
 .heartHeinsberg {
   display: none !important;
@@ -43,12 +50,15 @@
   .logoImageContainer {
     padding-left: 6rem;
     transform: translate(0, 2rem);
-    @media (max-width:768px){display: none;}
+    @media (max-width: 768px) {
+      display: none;
+    }
     .logoImage {
       width: 6rem;
       //transform: rotate(-35deg) translate(0, 2rem);
     }
-  }}
+  }
+}
 .swing {
   animation: swing ease-in-out 1s infinite alternate;
   transform-origin: center -20px;
