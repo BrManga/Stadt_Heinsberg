@@ -22,7 +22,7 @@ const Historie = () => {
           <figure className="justify-content-end">
             <img
               src={
-                "http://www.heinsberg.de/website/var/tmp/thumb_91__auto_1740e1f92ebab1592a49f096678aae02.jpeg"
+                "https://www.alleburgen.de/pics/nw/u685.jpg"
               }
               alt="Ruine der Berg"
             />
@@ -56,7 +56,7 @@ const Historie = () => {
           <figure>
             <img
               src={
-                "http://www.heinsberg.de/website/var/tmp/thumb_93__auto_c41f433921fb03da5a6ff36cbd157612.jpeg"
+                "https://www.heinsberg.de/kultur-freizeit-tourismus/sehenswuerdigkeiten/burg-und-kirchberg/fotograf-frank-metzemacher-tiga-media-office-alltag-99.jpg?cid=ayj.ti7&resize=a9cb61:780x350c"
               }
               alt="Ruine der Berg"
             />
