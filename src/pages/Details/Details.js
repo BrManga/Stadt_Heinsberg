@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import here from "../../assets/images/icon.png";
 import "./details.styles.scss";
 import { HeinsbergContext } from "../../context";
@@ -7,9 +7,9 @@ import mapboxgl from "mapbox-gl";
 import Footer from "../../components/Footer/Footer";
 import { token } from "../../key";
 const Details = props => {
-  console.log("props from details", token);
+  // console.log("props from details", token);
 
-  const initialState = {
+  const mapstate = {
     lng: 6.09708,
     lat: 51.06542,
     zoom: 12
@@ -55,9 +55,7 @@ const Details = props => {
     });
   });
 
-  const [mapstate, setMapstate] = useState(initialState);
   const context = useContext(HeinsbergContext);
-  // console.log("data yazdirildi", context);
 
   const data = context;
   const state = {

@@ -119,12 +119,12 @@ class HeinsbergContextProvider extends React.Component {
     const target = e.target;
     const value = target.value;
     const name = e.target.name;
-    console.log("handle change ", value);
+    // console.log("handle change ", value);
     //if there will be a new type of something you should enter it here inside conditions
     await this.setState({ ...this.state, [name]: value });
 
     if (value === "sehenswertes" || value === "sport") {
-      console.log("here", value);
+      // console.log("here", value);
 
       await this.filterFreizeitUndErholung();
     } else if (
@@ -176,7 +176,7 @@ class HeinsbergContextProvider extends React.Component {
         ...this.state.sorted,
         veranstaltungen: orderedVeranstallungen
       };
-      console.log("auf", orderedVeranstallungen);
+      //console.log("auf", orderedVeranstallungen);
 
       this.setState({ ...this.state, sorted: sortedAll }, () =>
         console.log("from filterVeranstaltungen aufsteigend: ", this.state)

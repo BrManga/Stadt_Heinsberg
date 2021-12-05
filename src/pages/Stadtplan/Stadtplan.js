@@ -19,7 +19,7 @@ const Stadtplan = () => {
       <div className="container">
         <div className="row d-flex align-items-center justify-content-center ">
           <div className="heading-frame col-12 col-lg-5">
-            <h2 contenteditable="true ">MY CITY HEINSBERG</h2>
+            <h2 >MY CITY HEINSBERG</h2>
           </div>
           <div className="stadtplanText col-12 col-lg-6">
             <p className="stadtplanTitle">HEINSBERGER STADTPLAN</p>
