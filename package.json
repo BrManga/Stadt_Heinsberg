@@ -10,7 +10,7 @@
     "contentful": "^9.1.5",
     "mapbox-gl": "^1.13.2",
     "mdbreact": "^5.2.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "react": "^16.14.0",
     "react-animated-css": "^1.2.1",
     "react-bootstrap": "^1.6.4",
